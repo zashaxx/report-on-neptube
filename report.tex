@@ -1,0 +1,888 @@
+% ==============================================================================
+% NEPTUBE MID-TERM REPORT LATEX SOURCE FILE
+% Compatible with pdfLaTeX compiler
+% Professional Academic Format
+% ==============================================================================
+
+\documentclass[12pt,oneside]{report}
+
+% =================================
+% 1. FONT AND ENCODING SETUP FOR pdfLaTeX
+% =================================
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+\usepackage{mathptmx}
+\usepackage{microtype} % Improved typography, better spacing and hyphenation
+
+% =================================
+% 2. MARGINS, SPACING, AND LAYOUT
+% =================================
+\usepackage[
+    letterpaper,
+    left=1.25in,
+    right=1.0in,
+    top=1.25in,
+    bottom=1.25in,
+    headheight=14pt,
+    headsep=0.35in,
+    footskip=0.5in
+]{geometry}
+
+% Line Spacing (1.5 line spacing)
+\usepackage{setspace}
+\onehalfspacing
+
+% Paragraph Spacing - consistent throughout
+\setlength{\parskip}{0.5em}
+\setlength{\parindent}{0pt}
+
+% Prevent orphans and widows (single lines at top/bottom of pages)
+\widowpenalty=10000
+\clubpenalty=10000
+\raggedbottom
+
+% Reduce excessive white space in lists
+\usepackage{enumitem}
+\setlist{nosep, topsep=0.3em, itemsep=0.3em, parsep=0pt, partopsep=0pt, leftmargin=2em}
+
+% =================================
+% 3. COLORS AND VISUAL ELEMENTS
+% =================================
+\usepackage[table,dvipsnames]{xcolor}
+\definecolor{necblue}{RGB}{0,51,102}
+\definecolor{darkblue}{RGB}{0,0,139}
+\definecolor{lightgray}{RGB}{245,245,245}
+\definecolor{tableheader}{RGB}{230,236,245}
+\definecolor{linkblue}{RGB}{0,102,204}
+
+% =================================
+% 4. HEADER AND FOOTER SETUP
+% =================================
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+
+% Header styling
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Chapter and section marks
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{#1}}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+
+% Header content
+\fancyhead[L]{}
+\fancyhead[R]{\small\textbf{\leftmark}}
+
+% Footer content - page number at bottom center
+\fancyfoot[C]{\thepage}
+
+% Plain style for chapter pages
+\fancypagestyle{plain}{
+    \fancyhf{}
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\footrulewidth}{0pt}
+    \fancyfoot[C]{\thepage}
+}
+
+% Empty style for title page (no header, no page number)
+\fancypagestyle{empty}{
+    \fancyhf{}
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\footrulewidth}{0pt}
+}
+
+% Front matter style (no header, page number at bottom)
+\fancypagestyle{frontmatter}{
+    \fancyhf{}
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\footrulewidth}{0pt}
+    \fancyfoot[C]{\thepage}
+}
+
+% =================================
+% 5. HEADING CUSTOMIZATION
+% =================================
+\usepackage{titlesec}
+\usepackage{placeins} % For \FloatBarrier to keep figures with their text
+
+% Ensure all 4 heading levels are numbered
+\setcounter{secnumdepth}{4} 
+\setcounter{tocdepth}{3}
+
+% Chapter Title (16 pt, Bold, centered)
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\centering\fontsize{16}{20}\selectfont}
+  {\chaptertitlename\ \thechapter}
+  {0.5em}
+  {}
+\titlespacing*{\chapter}{0pt}{-20pt}{1.5em}
+
+% Section heading (14 pt, Bold)
+\titleformat{\section}
+  {\normalfont\bfseries\fontsize{14}{18}\selectfont}
+  {\thesection}
+  {1em}
+  {}
+\titlespacing*{\section}{0pt}{1.2em}{0.6em}
+
+% Subsection heading (13 pt, Bold)
+\titleformat{\subsection}
+  {\normalfont\bfseries\fontsize{13}{16}\selectfont}
+  {\thesubsection}
+  {1em}
+  {}
+\titlespacing*{\subsection}{0pt}{1em}{0.5em}
+
+% Subsubsection heading (12 pt, Bold)
+\titleformat{\subsubsection}
+  {\normalfont\bfseries\fontsize{12}{15}\selectfont}
+  {\thesubsubsection}
+  {1em}
+  {}
+\titlespacing*{\subsubsection}{0pt}{0.8em}{0.4em}
+  
+% Paragraph heading (12 pt, Bold)
+\titleformat{\paragraph}[runin]
+  {\normalfont\bfseries\fontsize{12}{14}\selectfont}
+  {\theparagraph}
+  {1em}
+  {}
+  [. ]
+\titlespacing*{\paragraph}{0pt}{0.6em}{0.3em}
+
+% =================================
+% 6. PACKAGES FOR TABLES, IMAGES, AND REFERENCES
+% =================================
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{url}
+
+% Caption styling - clean and minimal
+\usepackage[
+    font={small},
+    labelfont={bf},
+    format=hang,
+    margin=1cm
+]{caption}
+
+% TOC formatting
+\usepackage{tocloft}
+\renewcommand{\cftchapfont}{\bfseries}
+\renewcommand{\cftsecfont}{\normalfont}
+\renewcommand{\cftsubsecfont}{\normalfont}
+\setlength{\cftbeforechapskip}{0.8em}
+\setlength{\cftbeforesecskip}{0.3em}
+\setlength{\cftbeforesubsecskip}{0.2em}
+\setlength{\cftchapindent}{0em}
+\setlength{\cftsecindent}{1.5em}
+\setlength{\cftsubsecindent}{3em}
+
+% Contents heading formatting - centered, 16pt to match chapter headings
+\renewcommand{\cfttoctitlefont}{\hfill\fontsize{16}{19}\selectfont\bfseries}
+\renewcommand{\cftaftertoctitle}{\hfill}
+\setlength{\cftbeforetoctitleskip}{0pt}
+\setlength{\cftaftertoctitleskip}{1.5em}
+
+% List of Figures heading formatting
+\renewcommand{\cftloftitlefont}{\hfill\fontsize{16}{19}\selectfont\bfseries}
+\renewcommand{\cftafterloftitle}{\hfill}
+\setlength{\cftbeforeloftitleskip}{0pt}
+\setlength{\cftafterloftitleskip}{1.5em}
+
+% List of Tables heading formatting
+\renewcommand{\cftlottitlefont}{\hfill\fontsize{16}{19}\selectfont\bfseries}
+\renewcommand{\cftafterlottitle}{\hfill}
+\setlength{\cftbeforelottitleskip}{0pt}
+\setlength{\cftafterlottitleskip}{1.5em}
+
+% Hyperref setup (load last)
+\usepackage[
+    bookmarks=true,
+    colorlinks=true,
+    linkcolor=darkblue,
+    citecolor=darkblue,
+    urlcolor=linkblue,
+    plainpages=false,
+    pdfpagelabels=true,
+    hypertexnames=false,
+    pdfauthor={Aayush Koirala, Prabesh Basnet, Kishor Upadhyaya},
+    pdftitle={Neptube: Video Streaming Web App with ML-Powered Recommendation},
+    pdfsubject={Mid-Term Report},
+    pdfkeywords={Video Streaming, Machine Learning, AI, Web Application, Nepal}
+]{hyperref}
+
+% Graphics path
+\graphicspath{{images/}}
+
+% =================================
+% 7. CUSTOM COMMANDS AND ENVIRONMENTS
+% =================================
+
+% Title page information
+\newcommand{\docTitle}{Mid-Term Report on\\ \textbf{Video Streaming Web App} with\\ ML-Powered Recommendation and AI Integration}
+\newcommand{\projectName}{\textsc{Neptube}}
+\newcommand{\docSubmittedTo}{Department of Computer Science and Engineering\\ Nepal Engineering College}
+\newcommand{\docRequirement}{in Partial Fulfillment of the\\ Requirements for the Degree of \textbf{B.E. in Computer Engineering}}
+\newcommand{\docSubmittedBy}{%
+    \begin{tabular}{l}
+        Aayush Koirala \hfill (021-304)\\[3pt]
+        Prabesh Basnet \hfill (021-355)\\[3pt]
+        Kishor Upadhyaya \hfill (021-332)
+    \end{tabular}%
+}
+\newcommand{\docDate}{December 2025}
+
+% Custom horizontal rule
+\newcommand{\HRule}{\rule{\linewidth}{0.5pt}}
+\newcommand{\HRulethick}{\rule{\linewidth}{1.5pt}}
+
+% ==============================================================================
+% BEGIN DOCUMENT
+% ==============================================================================
+\begin{document}
+
+% =================================
+% TITLE PAGE - Compact Professional Design
+% =================================
+\thispagestyle{empty}
+\begin{center}
+
+\vspace*{-0.5cm}
+
+% Project title
+{\fontsize{20}{24}\selectfont\bfseries \projectName}
+
+\vspace{0.4cm}
+
+{\large\bfseries \docTitle}
+
+\vspace{0.5cm}
+
+% Logo
+\includegraphics[width=1.8in]{NEC_Logo.png}
+
+\vspace{0.5cm}
+
+% Submission details
+{\large\bfseries Submitted to}\\[0.2cm]
+{\normalsize \docSubmittedTo}
+
+\vspace{0.3cm}
+
+{\normalsize \docRequirement}
+
+\vspace{0.5cm}
+
+% Team members section
+{\large\bfseries Submitted By}\\[0.3cm]
+{\normalsize
+\begin{tabular}{@{}l@{\hspace{1.2cm}}r@{}}
+    Aayush Koirala & (021-304)\\[0.15cm]
+    Prabesh Basnet & (021-355)\\[0.15cm]
+    Kishor Upadhyaya & (021-332)
+\end{tabular}
+}
+
+\vspace{0.5cm}
+
+% Supervisor section
+{\large\bfseries Supervised By}\\[0.3cm]
+{\normalsize Asst.Prof.Bishwadeep Mainaly}
+
+\vspace{0.5cm}
+
+% Date
+{\normalsize\bfseries \docDate}
+
+\end{center}
+\clearpage
+
+% =================================
+% ABSTRACT
+% =================================
+\pagestyle{frontmatter}
+\pagenumbering{roman}
+\setcounter{page}{1}
+\addcontentsline{toc}{chapter}{Abstract}
+\chapter*{Abstract}
+\thispagestyle{frontmatter}
+
+\noindent Our project focuses on developing a web app video streaming application that utilizes machine learning to enhance user experience through personalized content recommendations. The system leverages both collaborative filtering and content-based filtering to analyze user preferences, watch history, and interaction patterns, enabling intelligent video recommendations tailored to individual viewing habits.
+
+One of the major features of the application is its differentiated access model, where a user can both create and upload the video as well as view the videos uploaded by other users. This allows user to be the content creator as well as a viewer.
+
+With Artificial intelligence integration for the creator, it helps to generate the thumbnails, video description as well as eye catching titles.
+
+Also, with the help of Machine Learning the recommendation system continuously adapts to user behavior, ensuring the viewer tailored experience and adapts to the user liking and history which brings viewer friendliness.
+
+\vspace{1em}
+\noindent\textbf{Keywords:} Web App, Video Platform, Machine Learning, Smart Recommendations, User Behavior, AI Features, Creator Tools, Viewer Experience.
+
+\vspace{1em}
+\noindent\textbf{Keywords:} Video Streaming Platform, Machine Learning, Recommendation System, Artificial Intelligence, Content Creation Tools, User Experience, Collaborative Filtering, Web Application.
+\clearpage
+
+% =================================
+% ACKNOWLEDGEMENT
+% =================================
+\addcontentsline{toc}{chapter}{Acknowledgement}
+\chapter*{Acknowledgement}
+\thispagestyle{frontmatter}
+
+\noindent We'd like to take a moment to thank everyone who's supported us as we get ready to start this project. Even though we haven't begun the actual work yet, the encouragement and guidance we've received so far mean a lot and have helped us shape our ideas and goals.
+
+A big thank you to the \textbf{Department of Computer Science and Engineering} at \textbf{Nepal Engineering College} for creating an environment that motivates us to think creatively and take on new challenges. Your support gives us the confidence to move forward.
+
+We're also really grateful to our \textbf{teachers}, whose advice and feedback during the early stages have helped us figure out the right direction for our project.
+
+And of course, thank you to our \textbf{families and friends} for always being there, cheering us on, and believing in us. Your support makes a big difference as we prepare to take this next step.
+
+\vspace{2em}
+\begin{flushright}
+\textit{Yours sincerely,}\\[1em]
+\textbf{Aayush Koirala} (021-304)\\
+\textbf{Prabesh Basnet} (021-355)\\
+\textbf{Kishor Upadhyaya} (021-332)\\[0.5em]
+\textit{December 2025}
+\end{flushright}
+\clearpage
+
+% =================================
+% TABLE OF CONTENTS & LISTS
+% =================================
+\tableofcontents
+\thispagestyle{frontmatter}
+\clearpage
+
+\listoffigures
+\thispagestyle{frontmatter}
+\addcontentsline{toc}{chapter}{List of Figures}
+\clearpage
+
+\listoftables
+\thispagestyle{frontmatter}
+\addcontentsline{toc}{chapter}{List of Tables}
+\clearpage
+
+% =================================
+% START MAIN CONTENT
+% =================================
+\pagestyle{fancy}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\chapter{Introduction}
+
+\section{Introduction of the Project}
+
+In today's content-rich digital world, discovering videos that match user interests can often feel overwhelming. To tackle this challenge, we introduce \textbf{Neptube}, a web-based video streaming platform designed to deliver a personalized and engaging viewing experience through the power of artificial intelligence and machine learning.
+
+At the heart of Neptube lies an intelligent recommendation system powered by machine learning algorithms, including collaborative filtering and content-based filtering. These systems analyze user preferences, watch history, and interaction patterns to generate highly relevant video suggestions that adapt over time.
+
+Going beyond recommendations, Neptube also integrates AI-powered tools for content creators, including automatic thumbnail generation, video title suggestions, and description drafting~\cite{ref1}, helping creators make their content more appealing and discoverable with minimal effort.
+
+While the platform draws inspiration from larger services like YouTube, Neptube focuses on a simpler, more focused user experience. Core features include the ability to create playlists, like or dislike videos, comment, and subscribe to favorite creators---fostering community and interaction.
+
+By combining adaptive machine learning with creator-focused AI tools and essential social features, Neptube aims to create a user-friendly streaming environment that supports both content discovery and creation.
+
+\section{Problem Statement}
+
+In Nepal, the growing demand for digital video content faces several challenges that limit the overall user experience and content creator opportunities on streaming platforms. Despite improvements in internet access and usage, the following issues remain prevalent:
+
+\begin{itemize}
+    \item \textbf{Heavy Reliance on Foreign Platforms:} Most Nepali users depend on international streaming services, which often do not prioritize local languages, culture, or content preferences.
+    
+    \item \textbf{Lack of Localized Video Streaming Platforms:} There is a shortage of streaming services designed specifically for the Nepali market, which limits access to culturally relevant content and fails to address local user needs.
+    
+    \item \textbf{Content Discovery Overload:} Users in Nepal often feel overwhelmed by the vast number of available videos, making it difficult to find content that truly matches their interests.
+    
+    \item \textbf{Monetization Challenges:} Content creators face difficulties in monetizing their work effectively, impacting the sustainability of local content production.
+\end{itemize}
+
+This project aims to develop \textbf{Neptube}, a web-based video streaming platform designed specifically for the Nepali audience~\cite{ref2}. Leveraging machine learning, the platform will provide personalized video recommendations based on users' viewing habits and preferences. Alongside an intuitive user experience, Neptube will offer essential social features such as playlists, comments, likes/dislikes, and subscriptions to foster community engagement. Additionally, AI-powered tools~\cite{ref3} will assist content creators by automatically generating video thumbnails, titles, and descriptions to enhance content visibility. By focusing on localization, scalability, and creator support, Neptube seeks to improve content discovery, promote Nepali creators, and contribute to the growth of Nepal's digital entertainment landscape.
+
+\section{Objective}
+
+Following are the main objectives of our project:
+
+\begin{itemize}
+    \item Create a full-fledged online streaming platform where users will be able to smoothly watch videos, choose between different quality levels, and enjoy stable playback even on slower networks.
+    
+    \item Build a system that lets creators upload their content easily, manage their profiles, and customize things like thumbnails, titles, and video details with AI helpers~\cite{ref4}.
+    
+    \item Add features that bring life to the platform, like playlists, comments, likes, and channel subscriptions.
+    
+    \item Research popular recommendation techniques~\cite{ref5} including collaborative filtering and content-based filtering, drawing comparisons between how the two work before implementing which fits best with our platform.
+    
+    \item Integrate ad content naturally inside the video player.
+    
+    \item It should be designed for security and scalability to accommodate more users, more videos, and higher traffic.
+    
+    \item Let people trust the platform, by keeping their user data safe with good security practices.
+\end{itemize}
+
+\section{Aim}
+
+The aim of this project is to develop \textbf{Neptube}, a scalable and user-friendly web-based video streaming platform specifically designed for the Nepali audience. The platform will leverage advanced machine learning~\cite{ref1}~\cite{ref2} techniques to provide personalized video recommendations that reflect individual user preferences and local cultural relevance. Additionally, Neptube will integrate AI-powered tools to assist Nepali content creators in enhancing their videos through automatic thumbnail generation, title suggestions, and description drafting. By incorporating interactive features such as playlists, comments, likes/dislikes, and subscriptions, the platform aims to foster a vibrant online community that encourages user engagement and supports local creators. Overall, this project seeks to bridge the gap in the digital entertainment ecosystem in Nepal by offering a localized, intelligent, and engaging video streaming experience tailored to the unique needs of Nepali viewers and creators contributing in the entertainment sector ecosystem.
+
+\section{Motivation}
+
+Nepal's digital landscape is evolving rapidly, with increasing internet accessibility playing a pivotal role in transforming content consumption habits. However, most Nepali users currently rely on international video streaming platforms that often overlook local cultural contexts, linguistic diversity, and the unique preferences of Nepal's audience. This gap limits the availability of relevant, engaging, and culturally resonant content tailored specifically for Nepali viewers.
+
+Simultaneously, local content creators face significant challenges in expanding their reach and enhancing their content's appeal due to the lack of advanced, user-friendly tools. The absence of AI-driven features for content optimization and personalized discovery constrains their growth and limits user engagement.
+
+Driven by these challenges, Neptube aims to develop a web-based, localized video streaming platform that leverages cutting-edge machine learning techniques to deliver personalized recommendations and AI-powered creator tools~\cite{ref12}. This project is motivated by the vision to empower Nepali creators, enhance content discovery, and foster a vibrant, interactive community. Neptube aspires to bridge the gap between advanced technology and local cultural relevance, thereby enriching Nepal's digital entertainment ecosystem and offering a truly tailored viewing experience.
+
+\section{Scope}
+
+The scope of this project encompasses the following key areas:
+
+\begin{itemize}
+    \item \textbf{Development of a Web-Based Platform:} Build a responsive and user-friendly video streaming web application accessible via standard web browsers.
+    
+    \item \textbf{User Interaction Features:} Implement core functionalities such as video upload, viewing, commenting, liking/disliking, playlist creation, and channel subscription.
+    
+    \item \textbf{Personalized Recommendation System:} Integrate machine learning algorithms (collaborative and content-based filtering) to provide customized video suggestions based on user activity and preferences.
+    
+    \item \textbf{AI-Powered Creator Tools:} Provide content creators with artificial intelligence tools for automatic thumbnail generation, title suggestions, and video descriptions.
+    
+    \item \textbf{Support for Local Content:} Focus on promoting Nepali videos and regional content to support local creators and cater to the cultural preferences of Nepali users.
+    
+    \item \textbf{User Authentication and Access Control:} Enable secure sign-up, login, and role-based access (viewer/creator) to manage content uploads and interactions.
+    
+    \item \textbf{Scalable Architecture:} Design the system to handle increasing numbers of users and growing video content efficiently over time.
+    
+    \item \textbf{Community Engagement:} Encourage active participation through comment sections, feedback mechanisms, and content subscriptions.
+    
+    \item \textbf{Cross-Platform Accessibility:} Ensure the platform is optimized for use across desktops, laptops, and other devices with internet browsers, without reliance on mobile-specific apps.
+\end{itemize}
+
+\section{Application}
+
+The applications for our project are:
+
+\begin{itemize}
+    \item \textbf{Video Streaming Platform:} Allows users to watch, upload, and share video content through a centralized web application.
+    
+    \item \textbf{Content Recommendation:} Provides personalized video suggestions using machine learning to enhance user engagement and retention.
+    
+    \item \textbf{Digital Content Creation Support:} Offers AI-based tools to assist creators in generating thumbnails, titles, and descriptions for their videos.
+    
+    \item \textbf{Educational Use:} Can be adapted for sharing educational videos, tutorials, and online learning content for students and teachers.
+    
+    \item \textbf{Community Engagement:} Enables user interaction through comments, likes, and subscriptions, fostering a sense of online community.
+    
+    \item \textbf{Marketing and Branding:} Businesses and creators can use the platform to reach target audiences by uploading promotional and informational videos.
+    
+    \item \textbf{Entertainment Hub:} Serves as a go-to destination for users seeking diverse video content, from music and vlogs to documentaries and entertainment clips.
+\end{itemize}
+
+\section{Feasibility Study}
+
+\subsection{Technical Feasibility}
+
+The development of Neptube is technically feasible using currently available and accessible web technologies. The platform will be built using common web development tools such as HTML, CSS, JavaScript, and backend technologies like Node.js or Python~\cite{ref8}~\cite{ref16}. Machine learning models for video recommendation can be implemented using popular open-source libraries such as Scikit-learn or TensorFlow. AI features for generating thumbnails, titles, and descriptions can be added using pre-trained models or APIs. Since the project is web-based, it can be accessed from any device with a browser, eliminating the need for mobile app development. The technical requirements are within the skill set of the development team, making implementation realistic and manageable.
+
+\subsection{Economic Feasibility}
+
+The development of Neptube is economically practical, especially within the scope of a student or academic project. Most of the tools and technologies required---such as web development frameworks, machine learning libraries, and database systems---are freely available as open-source resources. Initial costs such as domain registration and basic cloud hosting can be managed using free or low-cost service tiers. Since the project does not require expensive hardware, paid APIs, or large-scale infrastructure during its initial phase, the overall financial requirements are minimal. This makes the project viable within limited budgets, while still allowing for future expansion if the platform gains traction.
+
+\section{Evaluation of Existing Systems}
+
+\subsection{YouTube}
+
+\textbf{Strengths:}
+\begin{itemize}
+    \item Free access with ads, making it widely accessible.
+    \item Supports a broad range of content from all over the world, including user-generated content.
+    \item Low-bandwidth streaming options (from 144p to 1080p), ensuring accessibility in regions with internet speed challenges~\cite{ref9}~\cite{ref14}.
+\end{itemize}
+
+\textbf{Weaknesses:}
+\begin{itemize}
+    \item The ad-supported model can disrupt the viewing experience, especially on free-tier content.
+    \item Difficult for growing for creators due to large and international scale of the website.
+    \item Payment to creators is difficult in the context of Nepal.
+\end{itemize}
+
+\subsection{CineHub Nepal}
+
+\textbf{Strengths:}
+\begin{itemize}
+    \item Focuses on Nepali indie films and content from local filmmakers.
+\end{itemize}
+
+\textbf{Weaknesses:}
+\begin{itemize}
+    \item No advanced recommendation system or personalized content discovery features.
+    \item Only for movies, Creators can't make their own content and upload it.
+\end{itemize}
+
+\subsection{TikTok}
+
+\textbf{Strengths:}
+\begin{itemize}
+    \item Focuses on promoting small business and small creators.
+    \item No ads so great viewing experience.
+    \item Good recommendation system.
+\end{itemize}
+
+\textbf{Weaknesses:}
+\begin{itemize}
+    \item No long form video upload feature.
+    \item Videos are always on portrait format.
+\end{itemize}
+
+Existing platforms like TikTok and YouTube have undoubtedly set the stage for streaming services, but there is room for innovation in areas such as local content, personalized recommendations. Neptube aims to address these opportunities by integrating machine learning for personalized content delivery and offering both content creation and viewing experience. This approach ensures a more inclusive and user-centric streaming experience.
+
+\chapter{Literature Review}
+
+The evolution of video streaming platforms has been profoundly shaped by advancements in machine learning and artificial intelligence. These technologies enable personalized content recommendations and intelligent content creation, enhancing both user engagement and creator efficiency. As global platforms continue to innovate, there is a growing opportunity to localize these technologies for underserved markets like Nepal. This literature review explores key developments in recommendation systems, AI-assisted content tools, user engagement strategies, and the current state of digital streaming services relevant to the Nepali context.
+
+\section{Machine Learning in Video Recommendations}
+
+\begin{itemize}
+    \item Netflix reports 80\% of its content views are driven by its recommendation system~\cite{ref17}~\cite{ref6}.
+    \item Collaborative filtering and content-based filtering are widely used for tailoring content suggestions~\cite{ref1a}.
+    \item Hybrid models and session-based neural networks improve personalization in real-time.
+    \item Dynamic representation learning adapts to changing viewer preferences.
+    \item Such techniques are essential for solving cold-start and over-saturation problems in localized platforms.
+\end{itemize}
+
+\section{Artificial Intelligence in Content Creation}
+
+\begin{itemize}
+    \item AI tools are used to generate thumbnails, video titles, and descriptions~\cite{ref10}.
+    \item YouTube and other platforms employ AI to assist creators with trend-based suggestions~\cite{ref11}.
+    \item AI improves accessibility for creators with fewer technical skills, which is vital in developing regions like Nepal.
+\end{itemize}
+
+\section{Community Engagement and Personalization}
+
+\begin{itemize}
+    \item User interactions (likes, comments, playlists) enhance platform stickiness.
+    \item Personalized UI/UX improves satisfaction and drives retention~\cite{ref9}.
+\end{itemize}
+
+\section{Streaming and Content Platforms in Nepal}
+
+\begin{itemize}
+    \item Most Nepali streaming services (e.g., NET TV, NepalFlix) lack ML-based recommendations~\cite{ref19}~\cite{ref18}.
+    \item Over-reliance on mobile apps leads to exclusion of desktop/laptop users.
+    \item Limited monetization tools for Nepali creators restrict local content growth.
+    \item There is a strong demand for culturally relevant, personalized content in the Nepali language.
+\end{itemize}
+
+\chapter{System Design}
+
+\section{System Description}
+
+Neptube is a web-based video streaming application designed to provide an engaging platform for both content creators and viewers. Users can upload videos, create playlists, and manage their channels, while viewers can watch videos, comment, like or dislike, and subscribe to channels they enjoy. The platform integrates machine learning techniques, such as collaborative and content-based filtering, to deliver personalized video recommendations based on individual user preferences and viewing history.
+
+Additionally, Neptube includes AI-powered tools that assist content creators by automatically generating video thumbnails, titles, and descriptions, helping improve content visibility and user engagement. The system is built with scalability and performance in mind, ensuring it can support a growing user base and content library. Focused on promoting Nepali and regional content, Neptube aims to offer a tailored and user-friendly experience for its audience.
+
+\section{Flowchart}
+
+An illustration of the logical flow and order of actions or steps in a system or process is called a flowchart. It represents numerous kinds of decisions, actions, inputs, outputs, and connectors using a variety of shapes and symbols. Workflows may be analyzed, communicated, and improved more easily when complicated processes are illustrated visually and simply via flowcharts. They are extensively used to visually map out processes and identify bottlenecks or areas for improvement in a variety of sectors, including software development, project management, business analysis, and problem-solving.
+
+\subsection{User's Flowchart}
+
+The user's flowchart provides a clear and professional overview of how a user interacts with a video-sharing platform. It begins with the user registering or logging into the system, followed by browsing and searching for videos. Once a video is found, the user decides whether to add it to a playlist. If not, they evaluate whether they prefer the video. Based on their preference, the user may like or dislike the video. If they dislike it, they may choose to watch it later. If they like the video, they can choose to leave a comment. After commenting or not, the user is prompted to subscribe to the creator. Regardless of whether they subscribe, the user continues watching and receives recommendations for similar videos before the flow ends. This flowchart represents a typical interactive experience of a user engaging with content on the platform.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.68\textwidth,keepaspectratio]{User_Flowchart.png}
+    \caption{User's Flowchart}
+    \label{fig:user_flowchart}
+\end{figure}
+
+\FloatBarrier
+
+\subsection{Creator's Flowchart}
+
+The creator's flowchart provides a clear and organized overview of the steps a content creator follows on a video-sharing platform. It begins with the creator registering or logging into their account. After logging in, the creator can choose to either edit the details of a previously uploaded video or upload a new one. If they choose to edit, they are directed to the dashboard to make changes to existing content.
+
+If the creator wants to upload a new video, they start by uploading the video file. Then, they are given the option to use AI-generated thumbnails and titles for the video or to enter them manually. This provides flexibility based on the creator's preference or need for convenience. Once the thumbnail and title are set---either through AI or manual input---the video is ready to be published.
+
+After publishing, the creator can access detailed statistics and reports to track the performance of the video, such as views, likes, and comments. Finally, the creator can engage with the audience by replying to comments, which helps build a stronger connection with viewers. This flowchart effectively summarizes the content creation and management process, from uploading and editing to analyzing performance and engaging with the audience.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.68\textwidth,keepaspectratio]{Creator_Flowchart.png}
+    \caption{Creator's Flowchart}
+    \label{fig:creator_flowchart}
+\end{figure}
+
+\FloatBarrier
+
+\section{Use Case Diagram}
+
+Use case diagrams are a simple and effective way to show how different people interact with a system. They help us understand what the system is supposed to do by focusing on the users and their actions. Instead of getting into the technical details, these diagrams give a clear picture of the main features and how each user---like a customer, service provider, or admin---connects with them. This makes it easier for everyone involved, from developers to stakeholders, to stay on the same page and ensure the system meets real user needs.
+
+\subsection{User's Use Case Diagram}
+
+The use case diagram represents the interaction between a Viewer and a video streaming platform, outlining key functionalities for consuming and engaging with content. The Viewer begins by Logging in to access personalized features and can then Search or Browse Videos to discover content. Upon selecting a video, they can Watch it, with extended options to Like or Dislike and Comment, promoting user interaction. Viewers also have the ability to Delete their Comments, Subscribe to Channels for updates, and Add or Remove Videos from Playlists for easier organization. Additionally, the platform offers Recommendations based on viewing behavior. The session concludes with the Logout function. This diagram efficiently captures the essential actions a Viewer can take to interact with and personalize their experience on the platform.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.68\textwidth,keepaspectratio]{User_Use_Case_Diagram.png}
+    \caption{User's Use Case Diagram}
+    \label{fig:user_use_case}
+\end{figure}
+
+\FloatBarrier
+
+\subsection{Creator's Use Case Diagram}
+
+The use case diagram illustrates the interactions between a Creator and a video content platform, outlining the core functionalities available for managing video content. The Creator begins by performing a Login, enabling access to their account and content management tools. They can then Upload Video to share new content with viewers and Remove Video to delete existing content when necessary. The Edit Video Metadata use case allows creators to modify details like titles, tags, and categories, while Change Thumbnail and Video Description support enhancing the visual and textual representation of the video. View Analytics enables creators to monitor video performance and audience engagement through data insights. In terms of community interaction, the Creator can Delete Comments that are inappropriate or irrelevant and Respond to Comments to engage directly with viewers. This diagram effectively summarizes the Creator's essential tools for content management, audience engagement, and performance tracking on the platform.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.68\textwidth,keepaspectratio]{Creator_Use_Case_Diagram.png}
+    \caption{Creator's Use Case Diagram}
+    \label{fig:creator_use_case}
+\end{figure}
+
+\FloatBarrier
+
+\subsection{Admin's Use Case Diagram}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.68\textwidth,keepaspectratio]{Admin_Use_Case_Diagram.png}
+    \caption{Admin's Use Case Diagram}
+    \label{fig:admin_use_case}
+\end{figure}
+
+\FloatBarrier
+
+\section{Sequence Diagram}
+
+Sequence diagrams help us visualize how different parts of a system communicate with each other over time. They show the step-by-step flow of messages between users and the system or between different parts of the system itself. This makes it easier to understand the exact order in which things happen---like when a user books a service and how the system responds. By breaking down the process into a timeline of interactions, sequence diagrams help developers plan, build, and troubleshoot the system more effectively.
+
+\subsection{User's Sequence Diagram}
+
+The user's sequence diagram illustrates the interaction between the user, the Neptube platform, and the database during various actions. It begins with the user logging in or registering, prompting Neptube to validate credentials with the database and return a success or failure message. Upon successful login, the homepage is shown, and the user browses videos. Neptube fetches the videos from creators, retrieves them from the database, and displays them to the user. When a video or channel is selected, Neptube retrieves the corresponding data and displays the video for playback. If the user adds the video to a playlist, it is saved in the database, confirmed, and a success message is shown. Subscribing to a creator updates the subscription list in the database, followed by a confirmation and display of a message. Liking or disliking a video updates the status in the database and shows a confirmation. Leaving or replying to a comment updates the comment section, confirms the update, and concludes with a success message.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.80\textwidth,keepaspectratio]{User_Sequence_Diagram.png}
+    \caption{User's Sequence Diagram}
+    \label{fig:user_sequence}
+\end{figure}
+
+\FloatBarrier
+
+\subsection{Admin's Sequence Diagram}
+
+The admin's sequence diagram illustrates how flagged content is moderated through interaction among the Admin, AdminService, Database, and the AI moderation engine. The process starts when the Admin initiates content moderation. The AdminService retrieves the flagged content from the database, then sends it to the AI moderation engine for analysis. After analyzing the content, the engine returns a verdict to the AdminService. Based on this verdict, the AdminService updates the content status in the database. Once the update is complete, the system notifies the Admin that the action has been completed.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.80\textwidth,keepaspectratio]{Admin_Sequence_Diagram.png}
+    \caption{Admin's Sequence Diagram}
+    \label{fig:admin_sequence}
+\end{figure}
+
+\FloatBarrier
+
+\subsection{Creator's Sequence Diagram}
+
+The creator's sequence diagram illustrates the interactions between a content creator, the Neptube platform, and its database, focusing on video management, viewer engagement, and analytics. The process begins when the creator logs in or registers, prompting Neptube to validate credentials through the database and return a success or failure message. Upon successful login, the system displays the creator's dashboard. The creator can then add a new video, which is sent to Neptube and updated in the database. A confirmation is returned, followed by a success or failure message shown to the creator. If needed, the creator can edit the details of an already uploaded video, with the changes being updated in the database and confirmed back to the creator. Next, the creator can engage with viewers by replying to comments; these replies are updated in the comment section and confirmed by the database, leading to the display of the updated comment section. Finally, the creator may choose to view analytics such as channel statistics and video performance data. This request prompts Neptube to fetch the relevant data from the database, and once retrieved, the data is displayed to the creator. This entire sequence ensures seamless content management and audience interaction for creators on the platform.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.80\textwidth,keepaspectratio]{Creator_Sequence_Diagram.png}
+    \caption{Creator's Sequence Diagram}
+    \label{fig:creator_sequence}
+\end{figure}
+
+\FloatBarrier
+
+\chapter{Implementation and Discussion}
+
+\section{Tasks Completed}
+
+\begin{itemize}
+    \item User sign-in, sign-up, and secure protected routes were added.
+    \item Database was set up using Neon PostgreSQL and Drizzle ORM.
+    \item Tables for users, videos, comments, likes, and subscriptions were created.
+    \item tRPC API was built for user, video, comment, and subscription features.
+    \item Admin panel for stats, user roles, user ban features was completed.
+    \item UI layout with navbar and sidebar was designed.
+    \item Responsive design and shadcn/ui components were fully integrated.
+\end{itemize}
+
+\section{Tasks Remaining}
+
+\begin{itemize}
+    \item Machine learning implementation for personalized recommendations.
+    \item Video interaction features (likes, comments, replies, subscriptions) enhancement.
+    \item AI-based content generation for video titles, descriptions, and thumbnails.
+\end{itemize}
+
+\section{Test Cases}
+
+For implementation of our project, we have done with some special tests such as white box testing and black box testing. White box testing is testing of the internal working or code of software application. Black box testing is system testing from perspective of user or we can say external working.
+
+\begin{table}[H]
+    \centering
+    \caption{Test Cases for Core Functionalities}
+    \label{tab:test_cases}
+    \renewcommand{\arraystretch}{1.3}
+    \footnotesize
+    \rowcolors{2}{white}{lightgray}
+    \begin{tabular}{|>{\centering\arraybackslash}p{0.06\textwidth}|p{0.14\textwidth}|p{0.18\textwidth}|p{0.18\textwidth}|p{0.14\textwidth}|p{0.12\textwidth}|>{\centering\arraybackslash}p{0.06\textwidth}|}
+        \hline
+        \rowcolor{tableheader}
+        \textbf{ID} & \textbf{Test Case} & \textbf{Test Steps} & \textbf{Test Data} & \textbf{Expected Result} & \textbf{Actual Result} & \textbf{Status} \\
+        \hline
+        1 & Check user login with valid data & Navigate to /sign-in and confirm the SignIn form & Email=test1@gmail.com, password=test123 & User should be able to sign in to the system & As expected & \textcolor{green!60!black}{\textbf{Pass}} \\
+        \hline
+        2 & Check user registration with valid data & Navigate to /sign-up and confirm the SignUp form & Email=test2@gmail.com, Password=test123 & User should be able to sign up to the system & As expected & \textcolor{green!60!black}{\textbf{Pass}} \\
+        \hline
+        3 & Sign-out functionality & Log in, open the avatar menu, and click Sign Out & Email=test1@gmail.com, Logged-in user & User logs out and returns to home & As expected & \textcolor{green!60!black}{\textbf{Pass}} \\
+        \hline
+        4 & Database connection & Check src/db/index.ts for Drizzle + Neon setup & DATABASE\_URL env & DB instance connects and exports & As expected & \textcolor{green!60!black}{\textbf{Pass}} \\
+        \hline
+        5 & Admin dashboard page & Log in as admin and open /admin & Admin user & Dashboard with stats displayed & As expected & \textcolor{green!60!black}{\textbf{Pass}} \\
+        \hline
+        6 & Admin users page & Open /admin/users and confirm the user list shows & Admin user & User management table displayed & As expected & \textcolor{green!60!black}{\textbf{Pass}} \\
+        \hline
+        7 & Check user ban functionality & Open admin dashboard, navigate to user tab and select the user to ban & No data required & Selected user should be banned & As expected & \textcolor{green!60!black}{\textbf{Pass}} \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\section{Gantt Chart}
+
+\begin{table}[H]
+    \centering
+    \caption{Project Development Timeline (Gantt Chart) -- Full Year}
+    \label{tab:gantt_chart}
+    \renewcommand{\arraystretch}{1.2}
+    \rowcolors{2}{white}{lightgray}
+    \scriptsize
+    \begin{tabular}{|p{0.15\textwidth}|>{\centering\arraybackslash}p{0.04\textwidth}|>{\centering\arraybackslash}p{0.04\textwidth}|>{\centering\arraybackslash}p{0.04\textwidth}|>{\centering\arraybackslash}p{0.04\textwidth}|>{\centering\arraybackslash}p{0.04\textwidth}|>{\centering\arraybackslash}p{0.04\textwidth}|>{\centering\arraybackslash}p{0.04\textwidth}|>{\centering\arraybackslash}p{0.04\textwidth}|>{\centering\arraybackslash}p{0.04\textwidth}|>{\centering\arraybackslash}p{0.04\textwidth}|>{\centering\arraybackslash}p{0.04\textwidth}|>{\centering\arraybackslash}p{0.04\textwidth}|}
+        \hline
+        \rowcolor{tableheader}
+        \textbf{Works} & \textbf{M1} & \textbf{M2} & \textbf{M3} & \textbf{M4} & \textbf{M5} & \textbf{M6} & \textbf{M7} & \textbf{M8} & \textbf{M9} & \textbf{M10} & \textbf{M11} & \textbf{M12} \\
+        \hline
+        Pre Analysis & \cellcolor{green!50}$\bullet$ & & & & & & & & & & & \\
+        \hline
+        Project Proposal & & \cellcolor{green!50}$\bullet$ & & & & & & & & & & \\
+        \hline
+        Detailed Study & & & \cellcolor{green!50}$\bullet$ & & & & & & & & & \\
+        \hline
+        Initial Prototype & & & & \cellcolor{green!50}$\bullet$ & \cellcolor{green!50}$\bullet$ & & & & & & & \\
+        \hline
+        Implementation 1 & & & & & & \cellcolor{green!50}$\bullet$ & & & & & & \\
+        \hline
+        Implementation 2 & & & & & & & \cellcolor{necblue!40}$\bullet$ & \cellcolor{necblue!40}$\bullet$ & & & & \\
+        \hline
+        ML Integration & & & & & & & & & \cellcolor{necblue!40}$\bullet$ & \cellcolor{necblue!40}$\bullet$ & & \\
+        \hline
+        Testing \& QA & & & & & & & & & & & \cellcolor{necblue!40}$\bullet$ & \\
+        \hline
+        Documentation & & & & & & & & & & & & \cellcolor{necblue!40}$\bullet$ \\
+        \hline
+    \end{tabular}
+    
+    \vspace{0.3cm}
+    \small
+    \textbf{Legend:} \colorbox{green!50}{Completed} \quad \colorbox{necblue!40}{Planned/In Progress}
+\end{table}
+
+\chapter{Conclusion}
+
+The Neptube project aims to create a user-centric web-based video streaming platform that combines modern web technologies with machine learning and artificial intelligence to enhance the overall user experience. By enabling both content creation and consumption, the platform fosters an interactive community where users can engage through comments, likes, and subscriptions. The integration of personalized recommendations ensures that viewers receive content tailored to their preferences, improving content discovery and user satisfaction.
+
+Moreover, Neptube's focus on promoting Nepali and regional content addresses the need for localized digital entertainment, providing a platform that supports and encourages local creators. With scalable architecture and AI-powered tools, the system is designed to be efficient, adaptable, and easy to use.
+
+In summary, Neptube holds the potential to enrich Nepal's digital entertainment landscape by offering a modern, engaging, and culturally relevant video streaming experience.
+
+% =================================
+% REFERENCES
+% =================================
+\clearpage
+\addcontentsline{toc}{chapter}{References}
+
+\begin{thebibliography}{99}
+
+\bibitem{ref1}
+D. Dugan \textit{et al.}, ``Generative AI in YouTube Content Creation,'' \textit{arXiv}, 2025. [Online]. Available: \url{https://arxiv.org/html/2503.03134v1}
+
+\bibitem{ref2}
+DaamiDeal, ``OTT Platforms in Nepal,'' 2025. [Online]. Available: \url{https://www.daamideal.com/blogs/popular-ott-platforms-for-online-movies-in-nepal}
+
+\bibitem{ref3}
+OpenAI, GPT-4 [Large language model], 2023. [Online]. Available: \url{https://openai.com/product/gpt-4}
+
+\bibitem{ref4}
+GoogleCloudPlatform, ``Generative-AI: Sample Code and Notebooks for Generative AI on Google Cloud, with Gemini on Vertex AI.'' [Online]. Available: \url{https://github.com/GoogleCloudPlatform/generative-ai}
+
+\bibitem{ref5}
+Twitter, ``The-Algorithm-ML: Source Code for Twitter's Recommendation Algorithm.'' [Online]. Available: \url{https://github.com/twitter/the-algorithm-ml}
+
+\bibitem{ref6}
+J. M. Ph.D. and E. Kavlakoglu, ``What Is Content-Based Filtering?,'' \textit{IBM}, 2025. [Online]. Available: \url{https://www.ibm.com/think/topics/content-based-filtering}
+
+\bibitem{ref7}
+A. Pujari and R. Patel, ``Exploring the MERN Stack: An In-Depth Analysis of Full-Stack JavaScript Development for Scalable and Efficient Web Applications,'' \textit{JETIR}, vol. 10, no. 5, pp. 1--7, May 2023. [Online]. Available: \url{https://www.jetir.org/papers/JETIRTHE2177.pdf}
+
+\bibitem{ref8}
+The PostgreSQL Global Development Group, ``PostgreSQL Documentation,'' 2025. [Online]. Available: \url{https://www.postgresql.org/docs/current/}
+
+\bibitem{ref9}
+FlowPlayer, ``Adaptive Bitrate Streaming (ABR): The Ultimate Guide to ABR Video,'' 2023. [Online]. Available: \url{https://flowplayer.com/blog/adaptive-bitrate-streaming}
+
+\bibitem{ref10}
+AlmaBetter, ``How Netflix Uses ML \& AI For Better Recommendation for Users,'' 2023. [Online]. Available: \url{https://www.almabetter.com/bytes/articles/how-netflix-uses-machinelearning-to-keep-users-glued-to-the-screen}
+
+\bibitem{ref11}
+P. Song, ``How Does Netflix Use Machine Learning for Recommendations?,'' \textit{ML Journey}, 2025. [Online]. Available: \url{https://mljourney.com/how-does-netflix-use-machine-learning-for-recommendations/}
+
+\bibitem{ref12}
+Ingrade, ``How YouTube Recommendation Works: A Deep Dive into AI, Deep Learning, and Collaborative Filtering,'' 2025. [Online]. Available: \url{https://ingrade.io/how-youtube-recommendation-works-a-deep-dive-into-ai-deep-learning-and-collaborative-filtering/}
+
+\bibitem{ref13}
+I. Chowdhury, ``Impact of Artificial Intelligence on Content Creation,'' \textit{IJRPR}, vol. 5, no. 7, 2024. [Online]. Available: \url{https://ijrpr.com/uploads/V5ISSUE7/IJRPR31275.pdf}
+
+\bibitem{ref14}
+D. Dugan \textit{et al.}, ``Generative AI in YouTube Content Creation,'' \textit{arXiv}, 2025. [Online]. Available: \url{https://arxiv.org/html/2503.03134v1}
+
+\bibitem{ref15}
+Vercel, \textit{Next.js Documentation: Server-Side Rendering and Data Fetching}, 2024. [Online]. Available: \url{https://nextjs.org/docs/pages/building-your-application/data-fetching/get-server-side-props}
+
+\bibitem{ref16}
+B. Joshi \textit{et al.}, ``Sentiment Analysis in Nepali using LLMs,'' \textit{ACM TALIP}, vol. 23, no. 2, 2025. [Online]. Available: \url{https://dl.acm.org/doi/fullHtml/10.1145/3647782.3647804}
+
+\bibitem{ref17}
+S. Kharel, ``Social Media Impact on Nepalese Teenagers,'' \textit{Theseus.fi}, 2024. [Online]. Available: \url{https://www.theseus.fi/bitstream/10024/815842/2/Kharel_Shreya.pdf}
+
+\bibitem{ref18}
+Google Research, ``Deep Neural Networks for YouTube Recommendations.'' [Online]. Available: \url{https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45530.pdf}
+
+\bibitem{ref19}
+M. AI, ``YouTube's Machine Learning (ML) Algorithm,'' \textit{DEV Community}, 2022. [Online]. Available: \url{https://dev.to/mage_ai/youtubes-machine-learning-ml-algorithm-ej0}
+
+\bibitem{ref20}
+Elinext, ``AI-Driven Personalization: YouTube, Netflix \& Amazon,'' 2025. [Online]. Available: \url{https://www.elinext.com/solutions/ai/trends/ai-driven-personalized-contentrecommendation/}
+
+\bibitem{ref21}
+M. G. Choi, H. J. Jo, and D. H. Kim, ``A Real-Time Blind Quality-of-Experience Assessment Metric for HTTP Adaptive Streaming,'' in \textit{Proc. 2023 IEEE 14th Int. Conf. Mobility, Sensing and Networking (MSN)}, 2023, pp. 58--65.
+
+\bibitem{ref1a}
+F. Ricci, L. Rokach, and B. Shapira, \textit{Recommender Systems Handbook}, 2nd ed. New York, NY, USA: Springer, 2015.
+
+\end{thebibliography}
+
+\end{document}
