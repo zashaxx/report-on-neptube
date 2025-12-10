@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.25)  10 DEC 2025 01:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.25)  10 DEC 2025 10:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -332,6 +332,16 @@ LaTeX Info: Redefining \Relbar on input line 970.
 LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
 )
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup6
+\symAMSb=\mathgroup7
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
 (C:\Program Files\MiKTeX\tex/latex/tools\longtable.sty
 Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
 \LTleft=\skip75
@@ -372,23 +382,70 @@ Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
+(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/lettrine\lettrine.sty
+File: lettrine.sty 2025-01-30 v2.80 (Daniel Flipo)
+
+(C:\Program Files\MiKTeX\tex/latex/l3packages/xfp\xfp.sty
+(C:\Program Files\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2025-11-06 L3 programming layer (loader) 
+
+(C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count317
+))
+Package: xfp 2025-10-09 L3 Floating point unit
+)
+\c@DefaultLines=\count318
+\c@DefaultDepth=\count319
+\DefaultFindent=\dimen197
+\DefaultNindent=\dimen198
+\DefaultSlope=\dimen199
+\DiscardVskip=\dimen256
+\L@lettrine=\box67
+\L@lbox=\box68
+\L@tbox=\box69
+\c@L@lines=\count320
+\c@L@depth=\count321
+\L@Pindent=\dimen257
+\L@Findent=\dimen258
+\L@Nindent=\dimen259
+\L@lraise=\dimen260
+\L@first=\dimen261
+\L@next=\dimen262
+\L@slope=\dimen263
+\L@height=\dimen264
+\L@novskip=\dimen265
+\L@target@ht=\dimen266
+\L@target@dp=\dimen267
+\L@target@tht=\dimen268
+\LettrineWidth=\dimen269
+\LettrineHeight=\dimen270
+\LettrineDepth=\dimen271
+\L@finalht=\dimen272
+\L@finaldp=\dimen273
+
+Loading lettrine.cfg
+(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/lettrine\lettrine.cfg)
+\Lettrine@tweaks=\toks37
+\Llist@everypar=\toks38
+)
 (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
 
 (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen197
-\captionmargin=\dimen198
-\caption@leftmargin=\dimen199
-\caption@rightmargin=\dimen256
-\caption@width=\dimen257
-\caption@indent=\dimen258
-\caption@parindent=\dimen259
-\caption@hangindent=\dimen260
+\caption@tempdima=\dimen274
+\captionmargin=\dimen275
+\caption@leftmargin=\dimen276
+\caption@rightmargin=\dimen277
+\caption@width=\dimen278
+\caption@indent=\dimen279
+\caption@parindent=\dimen280
+\caption@hangindent=\dimen281
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count317
-\c@continuedfloat=\count318
+\c@caption@flags=\count322
+\c@continuedfloat=\count323
 Package caption Info: float package is loaded.
 Package caption Info: longtable package is loaded.
 
@@ -427,8 +484,8 @@ Package tocloft Info: The document has chapter divisions on input line 51.
 \cftbeforefigskip=\skip107
 \cftfigindent=\skip108
 \cftfignumwidth=\skip109
-\c@lofdepth=\count319
-\c@lotdepth=\count320
+\c@lofdepth=\count324
+\c@lotdepth=\count325
 \cftbeforelottitleskip=\skip110
 \cftafterlottitleskip=\skip111
 \cftbeforetabskip=\skip112
@@ -476,14 +533,14 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
  (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count321
+\c@section@level=\count326
 ) (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/generic/stringenc\stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
-\@linkdim=\dimen261
-\Hy@linkcounter=\count322
-\Hy@pagecounter=\count323
+\@linkdim=\dimen282
+\Hy@linkcounter=\count327
+\Hy@pagecounter=\count328
 
 (C:\Program Files\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
@@ -493,7 +550,7 @@ Now handling font encoding PD1 ...
 (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count324
+\Hy@SavedSpaceFactor=\count329
 
 (C:\Program Files\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
@@ -512,9 +569,9 @@ Package hyperref Info: Plain pages OFF on input line 4210.
 Package hyperref Info: Backreferencing OFF on input line 4215.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4462.
-\c@Hy@tempcnt=\count325
+\c@Hy@tempcnt=\count330
 LaTeX Info: Redefining \url on input line 4801.
-\XeTeXLinkMargin=\dimen262
+\XeTeXLinkMargin=\dimen283
 
 (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -523,9 +580,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count326
-\Field@Width=\dimen263
-\Fld@charsize=\dimen264
+\Fld@menulength=\count331
+\Field@Width=\dimen284
+\Fld@charsize=\dimen285
 Package hyperref Info: Hyper figures OFF on input line 6078.
 Package hyperref Info: Link nesting OFF on input line 6083.
 Package hyperref Info: Hyper index ON on input line 6086.
@@ -533,15 +590,15 @@ Package hyperref Info: backreferencing OFF on input line 6093.
 Package hyperref Info: Link coloring ON on input line 6096.
 Package hyperref Info: Link coloring with OCG OFF on input line 6103.
 Package hyperref Info: PDF/A mode OFF on input line 6108.
-\Hy@abspage=\count327
-\c@Item=\count328
-\c@Hfootnote=\count329
+\Hy@abspage=\count332
+\c@Item=\count333
+\c@Hfootnote=\count334
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 (C:\Program Files\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
-\Fld@listcount=\count330
-\c@bookmark@seq@number=\count331
+\Fld@listcount=\count335
+\c@bookmark@seq@number=\count336
 
 (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.
 sty
@@ -556,42 +613,39 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip115
 )
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 25
-0.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 29
+7.
  (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/psnfss\t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
-(C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count332
-) (report.aux)
+(report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 250.
-LaTeX Font Info:    ... okay on input line 250.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 250.
-LaTeX Font Info:    ... okay on input line 250.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 250.
-LaTeX Font Info:    ... okay on input line 250.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 250.
-LaTeX Font Info:    ... okay on input line 250.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 250.
-LaTeX Font Info:    ... okay on input line 250.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 250.
-LaTeX Font Info:    ... okay on input line 250.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 250.
-LaTeX Font Info:    ... okay on input line 250.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 250.
-LaTeX Font Info:    ... okay on input line 250.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 250.
-LaTeX Font Info:    ... okay on input line 250.
-LaTeX Info: Redefining \microtypecontext on input line 250.
-Package microtype Info: Applying patch `item' on input line 250.
-Package microtype Info: Applying patch `toc' on input line 250.
-Package microtype Info: Applying patch `eqnum' on input line 250.
-Package microtype Info: Applying patch `footnote' on input line 250.
-Package microtype Info: Applying patch `verbatim' on input line 250.
-LaTeX Info: Redefining \microtypesetup on input line 250.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 297.
+LaTeX Font Info:    ... okay on input line 297.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 297.
+LaTeX Font Info:    ... okay on input line 297.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 297.
+LaTeX Font Info:    ... okay on input line 297.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 297.
+LaTeX Font Info:    ... okay on input line 297.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 297.
+LaTeX Font Info:    ... okay on input line 297.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 297.
+LaTeX Font Info:    ... okay on input line 297.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 297.
+LaTeX Font Info:    ... okay on input line 297.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 297.
+LaTeX Font Info:    ... okay on input line 297.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 297.
+LaTeX Font Info:    ... okay on input line 297.
+LaTeX Info: Redefining \microtypecontext on input line 297.
+Package microtype Info: Applying patch `item' on input line 297.
+Package microtype Info: Applying patch `toc' on input line 297.
+Package microtype Info: Applying patch `eqnum' on input line 297.
+Package microtype Info: Applying patch `footnote' on input line 297.
+Package microtype Info: Applying patch `verbatim' on input line 297.
+LaTeX Info: Redefining \microtypesetup on input line 297.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -602,6 +656,7 @@ Package microtype Info: Patching command `\showhyphens'.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
+
 (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/microtype\mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
@@ -641,17 +696,17 @@ File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 
 (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count333
-\scratchdimen=\dimen265
-\scratchbox=\box67
-\nofMPsegments=\count334
-\nofMParguments=\count335
-\everyMPshowfont=\toks37
-\MPscratchCnt=\count336
-\MPscratchDim=\dimen266
-\MPnumerator=\count337
-\makeMPintoPDFobject=\count338
-\everyMPtoPDFconversion=\toks38
+\scratchcounter=\count337
+\scratchdimen=\dimen286
+\scratchbox=\box70
+\nofMPsegments=\count338
+\nofMParguments=\count339
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count340
+\MPscratchDim=\dimen287
+\MPnumerator=\count341
+\makeMPintoPDFobject=\count342
+\everyMPtoPDFconversion=\toks40
 ) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -663,19 +718,19 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 250.
+Package hyperref Info: Link coloring ON on input line 297.
  (report.out)
 (report.out)
 \@outlinefile=\write3
 \openout3 = `report.out'.
 
-<images/NEC_Logo.png, id=177, 128.73094pt x 122.70844pt>
+<images/NEC_Logo.png, id=213, 128.73094pt x 122.70844pt>
 File: images/NEC_Logo.png Graphic file (type png)
 <use images/NEC_Logo.png>
-Package pdftex.def Info: images/NEC_Logo.png  used on input line 270.
+Package pdftex.def Info: images/NEC_Logo.png  used on input line 317.
 (pdftex.def)             Requested size: 130.08621pt x 124.01129pt.
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 287.
+ 334.
 
 (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
@@ -685,36 +740,42 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 287.
+ 334.
 
 (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/psnfss\omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 287.
+ 334.
 
 (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/psnfss\omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 287.
+ 334.
 
 (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/psnfss\omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
-87.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
+34.
 
 (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 287.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 334.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 287.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 334.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 287.
- [1
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 334.
+
+(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/microtype\mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/microtype\mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+) [1
 
 {C:/Users/hisen/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program Fi
 les/MiKTeX/fonts/enc/dvips/base/8r.enc} <./images/NEC_Logo.png>] [1
@@ -726,26 +787,31 @@ les/MiKTeX/fonts/enc/dvips/base/8r.enc} <./images/NEC_Logo.png>] [1
 ] (report.toc
 [3
 
-])
+] [4])
 \tf@toc=\write4
 \openout4 = `report.toc'.
 
- [4] (report.lof)
+ [5] (report.lof)
 \tf@lof=\write5
 \openout5 = `report.lof'.
 
- [5
+ [3
 
 ] (report.lot)
 \tf@lot=\write6
 \openout6 = `report.lot'.
 
- [6
+ [4
 
 ]
 Chapter 1.
+Package lettrine.sty Info: Targeted height = 42.16287pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 46.37962pt (\textcolor {necblue}{I
+}) loversize=0.1;
+(lettrine.sty)             reported on input line 433.
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 4
-01.
+48.
 (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [1
@@ -754,249 +820,279 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ] [2]
 [3] [4] [5] [6] [7]
 Chapter 2.
+Package lettrine.sty Info: Targeted height = 42.16287pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 46.37962pt (\textcolor {necblue}{T
+}) loversize=0.1;
+(lettrine.sty)             reported on input line 595.
 [8
 
 ] [9]
 Chapter 3.
+Package lettrine.sty Info: Targeted height = 42.16287pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 46.37962pt (\textcolor {necblue}{N
+}) loversize=0.1;
+(lettrine.sty)             reported on input line 635.
 [10
 
 ]
-<images/User_Flowchart.png, id=353, 243.91125pt x 563.85657pt>
+<images/User_Flowchart.png, id=412, 243.91125pt x 563.85657pt>
 File: images/User_Flowchart.png Graphic file (type png)
 <use images/User_Flowchart.png>
-Package pdftex.def Info: images/User_Flowchart.png  used on input line 602.
+Package pdftex.def Info: images/User_Flowchart.png  used on input line 649.
 (pdftex.def)             Requested size: 307.1442pt x 710.04146pt.
  [11]
 Overfull \vbox (119.34645pt too high) has occurred while \output is active []
 
 
 [12 <./images/User_Flowchart.png>]
-<images/Creator_Flowchart.png, id=365, 336.50719pt x 575.90157pt>
+<images/Creator_Flowchart.png, id=424, 336.50719pt x 575.90157pt>
 File: images/Creator_Flowchart.png Graphic file (type png)
 <use images/Creator_Flowchart.png>
-Package pdftex.def Info: images/Creator_Flowchart.png  used on input line 619.
+Package pdftex.def Info: images/Creator_Flowchart.png  used on input line 666.
 (pdftex.def)             Requested size: 307.1442pt x 525.653pt.
  [13] [14 <./images/Creator_Flowchart.png>]
-<images/User_Use_Case_Diagram.png, id=375, 333.49594pt x 413.29407pt>
+<images/User_Use_Case_Diagram.png, id=434, 333.49594pt x 413.29407pt>
 File: images/User_Use_Case_Diagram.png Graphic file (type png)
 <use images/User_Use_Case_Diagram.png>
 Package pdftex.def Info: images/User_Use_Case_Diagram.png  used on input line 6
-36.
+83.
 (pdftex.def)             Requested size: 307.1442pt x 380.66397pt.
 
 [15] [16 <./images/User_Use_Case_Diagram.png>]
-<images/Creator_Use_Case_Diagram.png, id=385, 337.26pt x 513.41812pt>
+<images/Creator_Use_Case_Diagram.png, id=444, 337.26pt x 513.41812pt>
 File: images/Creator_Use_Case_Diagram.png Graphic file (type png)
 <use images/Creator_Use_Case_Diagram.png>
 Package pdftex.def Info: images/Creator_Use_Case_Diagram.png  used on input lin
-e 649.
+e 696.
 (pdftex.def)             Requested size: 307.1442pt x 467.5794pt.
-<images/Admin_Use_Case_Diagram.png, id=386, 335.00156pt x 412.54124pt>
+<images/Admin_Use_Case_Diagram.png, id=445, 335.00156pt x 412.54124pt>
 File: images/Admin_Use_Case_Diagram.png Graphic file (type png)
 <use images/Admin_Use_Case_Diagram.png>
 Package pdftex.def Info: images/Admin_Use_Case_Diagram.png  used on input line 
-660.
+707.
 (pdftex.def)             Requested size: 307.1442pt x 378.23322pt.
  [17 <./images/Creator_Use_Case_Diagram.png>] [18 <./images/Admin_Use_Case_Diag
 ram.png>]
-<images/User_Sequence_Diagram.png, id=398, 390.70969pt x 438.13687pt>
+<images/User_Sequence_Diagram.png, id=457, 390.70969pt x 438.13687pt>
 File: images/User_Sequence_Diagram.png Graphic file (type png)
 <use images/User_Sequence_Diagram.png>
-Package pdftex.def Info: images/User_Sequence_Diagram.png  used on input line 6
-77.
+Package pdftex.def Info: images/User_Sequence_Diagram.png  used on input line 7
+24.
 (pdftex.def)             Requested size: 361.35138pt x 405.23682pt.
  [19]
-<images/Admin_Sequence_Diagram.png, id=403, 469.755pt x 345.582pt>
+<images/Admin_Sequence_Diagram.png, id=462, 469.755pt x 345.582pt>
 File: images/Admin_Sequence_Diagram.png Graphic file (type png)
 <use images/Admin_Sequence_Diagram.png>
 Package pdftex.def Info: images/Admin_Sequence_Diagram.png  used on input line 
-690.
+737.
 (pdftex.def)             Requested size: 361.35138pt x 265.8353pt.
  [20 <./images/User_Sequence_Diagram.png>]
-<images/Creator_Sequence_Diagram.png, id=409, 493.0922pt x 459.96844pt>
+<images/Creator_Sequence_Diagram.png, id=468, 493.0922pt x 459.96844pt>
 File: images/Creator_Sequence_Diagram.png Graphic file (type png)
 <use images/Creator_Sequence_Diagram.png>
 Package pdftex.def Info: images/Creator_Sequence_Diagram.png  used on input lin
-e 703.
+e 750.
 (pdftex.def)             Requested size: 361.35138pt x 337.09366pt.
  [21 <./images/Admin_Sequence_Diagram.png>] [22 <./images/Creator_Sequence_Diag
 ram.png>]
 Chapter 4.
+Package lettrine.sty Info: Targeted height = 42.16287pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 46.37962pt (\textcolor {necblue}{T
+}) loversize=0.1;
+(lettrine.sty)             reported on input line 761.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 743.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 792.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 743.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 792.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 743.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 792.
 
-Underfull \hbox (badness 10000) in paragraph at lines 746--746
+Underfull \hbox (badness 10000) in paragraph at lines 795--795
 []|\T1/ptm/b/n/10 (+20) Expected Re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 746--746
+Underfull \hbox (badness 10000) in paragraph at lines 795--795
 []|\T1/ptm/b/n/10 (+20) Actual Re-
  []
 
 
-Underfull \hbox (badness 1221) in paragraph at lines 748--748
+Underfull \hbox (badness 1221) in paragraph at lines 797--797
 \T1/ptm/m/n/10 (+20) gin with valid
  []
 
 
-Underfull \hbox (badness 3942) in paragraph at lines 748--748
+Underfull \hbox (badness 3942) in paragraph at lines 797--797
 []|\T1/ptm/m/n/10 (+20) Navigate to /sign-
  []
 
 
-Overfull \hbox (18.02544pt too wide) in paragraph at lines 748--748
+Overfull \hbox (18.02544pt too wide) in paragraph at lines 797--797
 []|\T1/ptm/m/n/10 (-20) Email=test1@gmail.com,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 750--750
+Underfull \hbox (badness 10000) in paragraph at lines 799--799
 []|\T1/ptm/m/n/10 (+20) Check user
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 750--750
+Underfull \hbox (badness 10000) in paragraph at lines 799--799
 \T1/ptm/m/n/10 (+20) reg-is-tra-tion
  []
 
 
-Underfull \hbox (badness 3942) in paragraph at lines 750--750
+Underfull \hbox (badness 3942) in paragraph at lines 799--799
 []|\T1/ptm/m/n/10 (+20) Navigate to /sign-
  []
 
 
-Overfull \hbox (18.02544pt too wide) in paragraph at lines 750--750
+Overfull \hbox (18.02544pt too wide) in paragraph at lines 799--799
 []|\T1/ptm/m/n/10 (-20) Email=test2@gmail.com,
  []
 
 
-Underfull \hbox (badness 5578) in paragraph at lines 752--752
+Underfull \hbox (badness 5578) in paragraph at lines 801--801
 []|\T1/ptm/m/n/10 (+20) Sign-out func-
  []
 
 
-Underfull \hbox (badness 2671) in paragraph at lines 752--752
+Underfull \hbox (badness 2671) in paragraph at lines 801--801
 []|\T1/ptm/m/n/10 (+20) Log in, open the
  []
 
 
-Underfull \hbox (badness 4366) in paragraph at lines 752--752
+Underfull \hbox (badness 4366) in paragraph at lines 801--801
 \T1/ptm/m/n/10 (+20) avatar menu, and
  []
 
 
-Overfull \hbox (18.02544pt too wide) in paragraph at lines 752--752
+Overfull \hbox (18.02544pt too wide) in paragraph at lines 801--801
 []|\T1/ptm/m/n/10 (-20) Email=test1@gmail.com,
  []
 
 
-Underfull \hbox (badness 2644) in paragraph at lines 752--752
+Underfull \hbox (badness 2644) in paragraph at lines 801--801
 []|\T1/ptm/m/n/10 (+20) User logs out
  []
 
 
-Underfull \hbox (badness 1406) in paragraph at lines 752--752
+Underfull \hbox (badness 1406) in paragraph at lines 801--801
 \T1/ptm/m/n/10 (+20) and re-turns to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 754--754
+Underfull \hbox (badness 10000) in paragraph at lines 803--803
 []|\T1/ptm/m/n/10 (+20) Database con-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 754--754
+Underfull \hbox (badness 10000) in paragraph at lines 803--803
 []|\T1/ptm/m/n/10 (+20) Check
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 754--754
+Underfull \hbox (badness 10000) in paragraph at lines 803--803
 \T1/ptm/m/n/10 (+20) src/db/index.ts
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 754--754
+Underfull \hbox (badness 10000) in paragraph at lines 803--803
 []|\T1/ptm/m/n/10 (+20) DATABASE_URL
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 754--754
+Underfull \hbox (badness 10000) in paragraph at lines 803--803
 []|\T1/ptm/m/n/10 (+20) DB in-stance
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 754--754
+Underfull \hbox (badness 10000) in paragraph at lines 803--803
 \T1/ptm/m/n/10 (+20) con-nects and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 756--756
+Underfull \hbox (badness 10000) in paragraph at lines 805--805
 []|\T1/ptm/m/n/10 (+20) Admin dash-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 758--758
+Underfull \hbox (badness 10000) in paragraph at lines 807--807
 []|\T1/ptm/m/n/10 (+20) Admin users
  []
 
 
-Underfull \hbox (badness 2837) in paragraph at lines 758--758
+Underfull \hbox (badness 2837) in paragraph at lines 807--807
 []|\T1/ptm/m/n/10 (+20) Open /ad-min/users
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 758--758
+Underfull \hbox (badness 10000) in paragraph at lines 807--807
 []|\T1/ptm/m/n/10 (+20) User man-age-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 758--758
+Underfull \hbox (badness 10000) in paragraph at lines 807--807
 \T1/ptm/m/n/10 (+20) ment ta-ble
  []
 
 
-Underfull \hbox (badness 2096) in paragraph at lines 760--760
+Underfull \hbox (badness 2096) in paragraph at lines 809--809
 []|\T1/ptm/m/n/10 (+20) Open ad-min dash-
  []
 
 
-Underfull \hbox (badness 1472) in paragraph at lines 760--760
+Underfull \hbox (badness 1472) in paragraph at lines 809--809
 \T1/ptm/m/n/10 (+20) board, nav-i-gate to
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 760--760
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
 []|\T1/ptm/m/n/10 (+20) Selected user
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 760--760
+Underfull \hbox (badness 10000) in paragraph at lines 809--809
 \T1/ptm/m/n/10 (+20) should be
  []
 
 
-Overfull \hbox (32.9858pt too wide) in paragraph at lines 743--763
+Overfull \hbox (32.9858pt too wide) in paragraph at lines 792--812
  [][] 
  []
 
 [23
 
 ]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 823.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 774.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 774.
- [24] [25]
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 823.
+
+Overfull \hbox (1.13689pt too wide) in paragraph at lines 826--827
+ []|\T1/ptm/b/n/10.95 (-20) W10| 
+ []
+
+
+Overfull \hbox (1.28532pt too wide) in paragraph at lines 823--843
+ [][] 
+ []
+
+[24] [25]
 Chapter 5.
+Package lettrine.sty Info: Targeted height = 42.16287pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 46.37962pt (\textcolor {necblue}{T
+}) loversize=0.1;
+(lettrine.sty)             reported on input line 851.
 [26
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 82
-1.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 86
+6.
  (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
@@ -1005,132 +1101,151 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 10000) in paragraph at lines 824--825
+Underfull \hbox (badness 10000) in paragraph at lines 869--870
 []\T1/ptm/m/n/12 (+20) DaamiDeal, ``OTT Plat-forms in Nepal,'' 2025. [On-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 824--825
+Underfull \hbox (badness 10000) in paragraph at lines 869--870
 \T1/ptm/m/n/12 (+20) line]. Avail-able: [][]$\T1/pcr/m/n/12 https : / / www . d
 aamideal . com / blogs /
  []
 
 
-Underfull \hbox (badness 4254) in paragraph at lines 836--837
-[]\T1/ptm/m/n/12 (+20) J. M. Ph.D. and E. Kavlakoglu, ``What Is Content-Based F
-il-ter-ing?,'' \T1/ptm/m/it/12 (+20) IBM\T1/ptm/m/n/12 (+20) ,
+Overfull \hbox (263.23904pt too wide) in paragraph at lines 881--882
+\T1/pcr/m/n/12 how-[]youtube-[]recommendation-[]works-[]a-[]deep-[]dive-[]into-
+[]ai-[]deep-[]learning-[]and-[]collaborative-[]filtering/$[][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 836--837
-\T1/ptm/m/n/12 (+20) 2025. [On-line]. Avail-able: [][]$\T1/pcr/m/n/12 https : /
- / www . ibm . com / think / topics /
- []
-
-
-Underfull \hbox (badness 1895) in paragraph at lines 845--846
+Underfull \hbox (badness 1895) in paragraph at lines 890--891
 []\T1/ptm/m/n/12 (+20) FlowPlayer, ``Adap-tive Bi-trate Stream-ing (ABR): The U
 l-ti-mate Guide to ABR
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 845--846
+Underfull \hbox (badness 10000) in paragraph at lines 890--891
 \T1/ptm/m/n/12 (+20) Video,'' 2023. [On-line]. Avail-able: [][]$\T1/pcr/m/n/12 
 https : / / flowplayer . com / blog /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 848--849
-\T1/ptm/m/n/12 (+20) [On-line]. Avail-able: [][]$\T1/pcr/m/n/12 https : / / www
- . almabetter . com / bytes / articles /
+Underfull \hbox (badness 4254) in paragraph at lines 896--897
+[]\T1/ptm/m/n/12 (+20) J. M. Ph.D. and E. Kavlakoglu, ``What Is Content-Based F
+il-ter-ing?,'' \T1/ptm/m/it/12 (+20) IBM\T1/ptm/m/n/12 (+20) ,
  []
 
 
-Overfull \hbox (54.37914pt too wide) in paragraph at lines 848--849
-\T1/pcr/m/n/12 how-[]netflix-[]uses-[]machinelearning-[]to-[]keep-[]users-[]glu
-ed-[]to-[]the-[]screen$[][] 
- []
-
-
-Underfull \hbox (badness 2970) in paragraph at lines 851--852
-[]\T1/ptm/m/n/12 (+20) P. Song, ``How Does Net-flix Use Ma-chine Learn-ing for 
-Rec-om-men-da-tions?,''
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 851--852
-\T1/ptm/m/it/12 (+20) ML Jour-ney\T1/ptm/m/n/12 (+20) , 2025. [On-line]. Avail-
-able: [][]$\T1/pcr/m/n/12 https : / / mljourney . com /
+Underfull \hbox (badness 10000) in paragraph at lines 896--897
+\T1/ptm/m/n/12 (+20) 2025. [On-line]. Avail-able: [][]$\T1/pcr/m/n/12 https : /
+ / www . ibm . com / think / topics /
  []
 
 [27
 
 
 ]
-Overfull \hbox (263.23904pt too wide) in paragraph at lines 854--855
-\T1/pcr/m/n/12 how-[]youtube-[]recommendation-[]works-[]a-[]deep-[]dive-[]into-
-[]ai-[]deep-[]learning-[]and-[]collaborative-[]filtering/$[][] 
+Underfull \hbox (badness 10000) in paragraph at lines 902--903
+\T1/ptm/m/n/12 (+20) [On-line]. Avail-able: [][]$\T1/pcr/m/n/12 https : / / www
+ . almabetter . com / bytes / articles /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 863--864
-[]\T1/ptm/m/n/12 (+20) Vercel, \T1/ptm/m/it/12 (+20) Next.js Doc-u-men-ta-tion:
- Server-Side Ren-der-ing and Data
+Overfull \hbox (54.37914pt too wide) in paragraph at lines 902--903
+\T1/pcr/m/n/12 how-[]netflix-[]uses-[]machinelearning-[]to-[]keep-[]users-[]glu
+ed-[]to-[]the-[]screen$[][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 863--864
-\T1/ptm/m/it/12 (+20) Fetch-ing\T1/ptm/m/n/12 (+20) , 2024. [On-line]. Avail-ab
-le: [][]$\T1/pcr/m/n/12 https : / / nextjs . org /
+Underfull \hbox (badness 2970) in paragraph at lines 905--906
+[]\T1/ptm/m/n/12 (+20) P. Song, ``How Does Net-flix Use Ma-chine Learn-ing for 
+Rec-om-men-da-tions?,''
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 863--864
-\T1/pcr/m/n/12 docs / pages / building-[]your-[]application / data-[]fetching /
-
+Underfull \hbox (badness 10000) in paragraph at lines 905--906
+\T1/ptm/m/it/12 (+20) ML Jour-ney\T1/ptm/m/n/12 (+20) , 2025. [On-line]. Avail-
+able: [][]$\T1/pcr/m/n/12 https : / / mljourney . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 875--876
+Underfull \hbox (badness 10000) in paragraph at lines 908--909
 []\T1/ptm/m/n/12 (+20) M. AI, ``YouTube's Ma-chine Learn-ing (ML) Al-go-rithm,'
 ' \T1/ptm/m/it/12 (+20) DEV Com-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 875--876
+Underfull \hbox (badness 10000) in paragraph at lines 908--909
 \T1/ptm/m/it/12 (+20) mu-nity\T1/ptm/m/n/12 (+20) , 2022. [On-line]. Avail-able
 : [][]$\T1/pcr/m/n/12 https : / / dev . to / mage _ ai /
  []
 
 
-Underfull \hbox (badness 7504) in paragraph at lines 878--879
+Underfull \hbox (badness 7504) in paragraph at lines 914--915
 []\T1/ptm/m/n/12 (+20) Elinext, ``AI-Driven Per-son-al-iza-tion: YouTube, Net-f
 lix & Ama-zon,'' 2025.
  []
 
-[28] [29] (report.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 923--924
+[]\T1/ptm/m/n/12 (+20) Vercel, \T1/ptm/m/it/12 (+20) Next.js Doc-u-men-ta-tion:
+ Server-Side Ren-der-ing and Data
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 923--924
+\T1/ptm/m/it/12 (+20) Fetch-ing\T1/ptm/m/n/12 (+20) , 2024. [On-line]. Avail-ab
+le: [][]$\T1/pcr/m/n/12 https : / / nextjs . org /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 923--924
+\T1/pcr/m/n/12 docs / pages / building-[]your-[]application / data-[]fetching /
+
+ []
+
+[28] [29]
+Appendix A.
+Package lettrine.sty Info: Targeted height = 42.16287pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 46.37962pt (\textcolor {necblue}{T
+}) loversize=0.1;
+(lettrine.sty)             reported on input line 938.
+[30
+
+] [31] [32]
+Appendix B.
+Package lettrine.sty Info: Targeted height = 42.16287pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 46.37962pt (\textcolor {necblue}{T
+}) loversize=0.1;
+(lettrine.sty)             reported on input line 1048.
+[33
+
+] (report.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
  ***********
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 208DDA206224A27D030E11EE556A9EBF;6483.
+(rerunfilecheck)             Checksum: 42FF4A610746F2CBA433E9956496ABE2;7742.
  ) 
 Here is how much of TeX's memory you used:
- 16472 strings out of 467871
- 262190 string characters out of 5428442
- 753718 words of memory out of 5000000
- 44634 multiletter control sequences out of 15000+600000
- 714957 words of font info for 347 fonts, out of 8000000 for 9000
+ 17335 strings out of 467871
+ 275487 string characters out of 5428442
+ 752048 words of memory out of 5000000
+ 45422 multiletter control sequences out of 15000+600000
+ 724672 words of font info for 388 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,83p,1345b,615s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,13n,83p,1345b,615s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Progra
-m Files/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX/font
-s/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utm
-r8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report.pdf (36 pages, 621606 bytes).
+m Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files
+/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX/fonts/type1
+/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb
+><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on report.pdf (41 pages, 647766 bytes).
 PDF statistics:
- 543 PDF objects out of 1000 (max. 8388607)
- 111 named destinations out of 1000 (max. 500000)
- 105358 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 628 PDF objects out of 1000 (max. 8388607)
+ 128 named destinations out of 1000 (max. 500000)
+ 107478 words of extra memory for PDF output out of 128383 (max. 10000000)
 

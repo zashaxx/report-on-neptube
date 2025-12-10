@@ -63,16 +63,16 @@
 \pagestyle{fancy}
 \fancyhf{} % Clear all header and footer fields
 
-% Header styling
-\renewcommand{\headrulewidth}{0pt}
+% Header styling - add a subtle line under header
+\renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0pt}
 
 % Chapter and section marks
 \renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{#1}}{}}
 \renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
 
-% Header content
-\fancyhead[L]{}
+% Header content - Project name on left, chapter on right
+\fancyhead[L]{\small\textit{Neptube: Video Streaming Platform}}
 \fancyhead[R]{\small\textbf{\leftmark}}
 
 % Footer content - page number at bottom center
@@ -111,13 +111,16 @@
 \setcounter{secnumdepth}{4} 
 \setcounter{tocdepth}{3}
 
-% Chapter Title (16 pt, Bold, centered)
+% Chapter Title (16 pt, Bold, centered) with horizontal rule below
 \titleformat{\chapter}[display]
   {\normalfont\bfseries\centering\fontsize{16}{20}\selectfont}
   {\chaptertitlename\ \thechapter}
   {0.5em}
-  {}
+  {\vspace{-0.3em}}
 \titlespacing*{\chapter}{0pt}{-20pt}{1.5em}
+
+% Add horizontal rule after chapter titles
+\newcommand{\chapterrule}{\vspace{0.3em}\noindent\rule{\textwidth}{0.8pt}\vspace{0.5em}}
 
 % Section heading (14 pt, Bold)
 \titleformat{\section}
@@ -159,11 +162,18 @@
 \usepackage{float}
 \usepackage{booktabs}
 \usepackage{amsmath}
+\usepackage{amssymb}  % For checkmark symbol
 \usepackage{array}
 \usepackage{longtable}
 \usepackage{tabularx}
 \usepackage{multirow}
 \usepackage{url}
+\usepackage{lettrine}  % For drop caps (large first letter)
+
+% Drop cap settings
+\setcounter{DefaultLines}{3}
+\renewcommand{\DefaultLoversize}{0.1}
+\renewcommand{\DefaultLraise}{0}
 
 % Caption styling - clean and minimal
 \usepackage[
@@ -173,35 +183,72 @@
     margin=1cm
 ]{caption}
 
-% TOC formatting
+% TOC formatting - Professional styling
 \usepackage{tocloft}
+
+% Chapter entries - bold with dotted leaders
 \renewcommand{\cftchapfont}{\bfseries}
+\renewcommand{\cftchappagefont}{\bfseries}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+
+% Section entries
 \renewcommand{\cftsecfont}{\normalfont}
+\renewcommand{\cftsecpagefont}{\normalfont}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
+% Subsection entries
 \renewcommand{\cftsubsecfont}{\normalfont}
-\setlength{\cftbeforechapskip}{0.8em}
-\setlength{\cftbeforesecskip}{0.3em}
+\renewcommand{\cftsubsecpagefont}{\normalfont}
+\renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}}
+
+% Spacing between entries
+\setlength{\cftbeforechapskip}{1em}
+\setlength{\cftbeforesecskip}{0.4em}
 \setlength{\cftbeforesubsecskip}{0.2em}
+
+% Indentation
 \setlength{\cftchapindent}{0em}
-\setlength{\cftsecindent}{1.5em}
-\setlength{\cftsubsecindent}{3em}
+\setlength{\cftsecindent}{2em}
+\setlength{\cftsubsecindent}{4em}
+
+% Number widths
+\setlength{\cftchapnumwidth}{2em}
+\setlength{\cftsecnumwidth}{2.5em}
+\setlength{\cftsubsecnumwidth}{3em}
 
 % Contents heading formatting - centered, 16pt to match chapter headings
 \renewcommand{\cfttoctitlefont}{\hfill\fontsize{16}{19}\selectfont\bfseries}
 \renewcommand{\cftaftertoctitle}{\hfill}
 \setlength{\cftbeforetoctitleskip}{0pt}
-\setlength{\cftaftertoctitleskip}{1.5em}
+\setlength{\cftaftertoctitleskip}{2em}
 
 % List of Figures heading formatting
 \renewcommand{\cftloftitlefont}{\hfill\fontsize{16}{19}\selectfont\bfseries}
 \renewcommand{\cftafterloftitle}{\hfill}
 \setlength{\cftbeforeloftitleskip}{0pt}
-\setlength{\cftafterloftitleskip}{1.5em}
+\setlength{\cftafterloftitleskip}{2em}
+
+% List of Figures entries - dotted leaders
+\renewcommand{\cftfigfont}{\normalfont}
+\renewcommand{\cftfigpagefont}{\normalfont}
+\renewcommand{\cftfigleader}{\cftdotfill{\cftdotsep}}
+\setlength{\cftfigindent}{0em}
+\setlength{\cftfignumwidth}{3em}
+\setlength{\cftbeforefigskip}{0.5em}
 
 % List of Tables heading formatting
 \renewcommand{\cftlottitlefont}{\hfill\fontsize{16}{19}\selectfont\bfseries}
 \renewcommand{\cftafterlottitle}{\hfill}
 \setlength{\cftbeforelottitleskip}{0pt}
-\setlength{\cftafterlottitleskip}{1.5em}
+\setlength{\cftafterlottitleskip}{2em}
+
+% List of Tables entries - dotted leaders
+\renewcommand{\cfttabfont}{\normalfont}
+\renewcommand{\cfttabpagefont}{\normalfont}
+\renewcommand{\cfttableader}{\cftdotfill{\cftdotsep}}
+\setlength{\cfttabindent}{0em}
+\setlength{\cfttabnumwidth}{3em}
+\setlength{\cftbeforetabskip}{0.5em}
 
 % Hyperref setup (load last)
 \usepackage[
@@ -325,14 +372,12 @@ Also, with the help of Machine Learning the recommendation system continuously a
 
 \vspace{1em}
 \noindent\textbf{Keywords:} Web App, Video Platform, Machine Learning, Smart Recommendations, User Behavior, AI Features, Creator Tools, Viewer Experience.
-
-\vspace{1em}
-\noindent\textbf{Keywords:} Video Streaming Platform, Machine Learning, Recommendation System, Artificial Intelligence, Content Creation Tools, User Experience, Collaborative Filtering, Web Application.
 \clearpage
 
 % =================================
 % ACKNOWLEDGEMENT
 % =================================
+\setcounter{page}{2}
 \addcontentsline{toc}{chapter}{Acknowledgement}
 \chapter*{Acknowledgement}
 \thispagestyle{frontmatter}
@@ -359,14 +404,16 @@ And of course, thank you to our \textbf{families and friends} for always being t
 % TABLE OF CONTENTS & LISTS
 % =================================
 \tableofcontents
-\thispagestyle{frontmatter}
+\thispagestyle{empty}  % No page number on TOC
 \clearpage
 
+\setcounter{page}{3}
 \listoffigures
 \thispagestyle{frontmatter}
 \addcontentsline{toc}{chapter}{List of Figures}
 \clearpage
 
+\setcounter{page}{4}
 \listoftables
 \thispagestyle{frontmatter}
 \addcontentsline{toc}{chapter}{List of Tables}
@@ -383,7 +430,7 @@ And of course, thank you to our \textbf{families and friends} for always being t
 
 \section{Introduction of the Project}
 
-In today's content-rich digital world, discovering videos that match user interests can often feel overwhelming. To tackle this challenge, we introduce \textbf{Neptube}, a web-based video streaming platform designed to deliver a personalized and engaging viewing experience through the power of artificial intelligence and machine learning.
+\lettrine[lines=3, lraise=0.1, nindent=0.5em]{\textcolor{necblue}{I}}{n today's content-rich digital world,} discovering videos that match user interests can often feel overwhelming. To tackle this challenge, we introduce \textbf{Neptube}, a web-based video streaming platform designed to deliver a personalized and engaging viewing experience through the power of artificial intelligence and machine learning.
 
 At the heart of Neptube lies an intelligent recommendation system powered by machine learning algorithms, including collaborative filtering and content-based filtering. These systems analyze user preferences, watch history, and interaction patterns to generate highly relevant video suggestions that adapt over time.
 
@@ -439,7 +486,7 @@ Nepal's digital landscape is evolving rapidly, with increasing internet accessib
 
 Simultaneously, local content creators face significant challenges in expanding their reach and enhancing their content's appeal due to the lack of advanced, user-friendly tools. The absence of AI-driven features for content optimization and personalized discovery constrains their growth and limits user engagement.
 
-Driven by these challenges, Neptube aims to develop a web-based, localized video streaming platform that leverages cutting-edge machine learning techniques to deliver personalized recommendations and AI-powered creator tools~\cite{ref12}. This project is motivated by the vision to empower Nepali creators, enhance content discovery, and foster a vibrant, interactive community. Neptube aspires to bridge the gap between advanced technology and local cultural relevance, thereby enriching Nepal's digital entertainment ecosystem and offering a truly tailored viewing experience.
+Driven by these challenges, Neptube aims to develop a web-based, localized video streaming platform that leverages cutting-edge machine learning techniques to deliver personalized recommendations and AI-powered creator tools~\cite{ref6}. This project is motivated by the vision to empower Nepali creators, enhance content discovery, and foster a vibrant, interactive community. Neptube aspires to bridge the gap between advanced technology and local cultural relevance, thereby enriching Nepal's digital entertainment ecosystem and offering a truly tailored viewing experience.
 
 \section{Scope}
 
@@ -489,7 +536,7 @@ The applications for our project are:
 
 \subsection{Technical Feasibility}
 
-The development of Neptube is technically feasible using currently available and accessible web technologies. The platform will be built using common web development tools such as HTML, CSS, JavaScript, and backend technologies like Node.js or Python~\cite{ref8}~\cite{ref16}. Machine learning models for video recommendation can be implemented using popular open-source libraries such as Scikit-learn or TensorFlow. AI features for generating thumbnails, titles, and descriptions can be added using pre-trained models or APIs. Since the project is web-based, it can be accessed from any device with a browser, eliminating the need for mobile app development. The technical requirements are within the skill set of the development team, making implementation realistic and manageable.
+The development of Neptube is technically feasible using currently available and accessible web technologies. The platform will be built using common web development tools such as HTML, CSS, JavaScript, and backend technologies like Node.js or Python~\cite{ref7}~\cite{ref8}. Machine learning models for video recommendation can be implemented using popular open-source libraries such as Scikit-learn or TensorFlow. AI features for generating thumbnails, titles, and descriptions can be added using pre-trained models or APIs. Since the project is web-based, it can be accessed from any device with a browser, eliminating the need for mobile app development. The technical requirements are within the skill set of the development team, making implementation realistic and manageable.
 
 \subsection{Economic Feasibility}
 
@@ -503,7 +550,7 @@ The development of Neptube is economically practical, especially within the scop
 \begin{itemize}
     \item Free access with ads, making it widely accessible.
     \item Supports a broad range of content from all over the world, including user-generated content.
-    \item Low-bandwidth streaming options (from 144p to 1080p), ensuring accessibility in regions with internet speed challenges~\cite{ref9}~\cite{ref14}.
+    \item Low-bandwidth streaming options (from 144p to 1080p), ensuring accessibility in regions with internet speed challenges~\cite{ref9}~\cite{ref21}.
 \end{itemize}
 
 \textbf{Weaknesses:}
@@ -545,13 +592,13 @@ Existing platforms like TikTok and YouTube have undoubtedly set the stage for st
 
 \chapter{Literature Review}
 
-The evolution of video streaming platforms has been profoundly shaped by advancements in machine learning and artificial intelligence. These technologies enable personalized content recommendations and intelligent content creation, enhancing both user engagement and creator efficiency. As global platforms continue to innovate, there is a growing opportunity to localize these technologies for underserved markets like Nepal. This literature review explores key developments in recommendation systems, AI-assisted content tools, user engagement strategies, and the current state of digital streaming services relevant to the Nepali context.
+\lettrine[lines=3, lraise=0.1, nindent=0.5em]{\textcolor{necblue}{T}}{he evolution of video streaming platforms} has been profoundly shaped by advancements in machine learning and artificial intelligence. These technologies enable personalized content recommendations and intelligent content creation, enhancing both user engagement and creator efficiency. As global platforms continue to innovate, there is a growing opportunity to localize these technologies for underserved markets like Nepal. This literature review explores key developments in recommendation systems, AI-assisted content tools, user engagement strategies, and the current state of digital streaming services relevant to the Nepali context.
 
 \section{Machine Learning in Video Recommendations}
 
 \begin{itemize}
-    \item Netflix reports 80\% of its content views are driven by its recommendation system~\cite{ref17}~\cite{ref6}.
-    \item Collaborative filtering and content-based filtering are widely used for tailoring content suggestions~\cite{ref1a}.
+    \item Netflix reports 80\% of its content views are driven by its recommendation system~\cite{ref10}~\cite{ref11}.
+    \item Collaborative filtering and content-based filtering are widely used for tailoring content suggestions~\cite{ref12}.
     \item Hybrid models and session-based neural networks improve personalization in real-time.
     \item Dynamic representation learning adapts to changing viewer preferences.
     \item Such techniques are essential for solving cold-start and over-saturation problems in localized platforms.
@@ -560,8 +607,8 @@ The evolution of video streaming platforms has been profoundly shaped by advance
 \section{Artificial Intelligence in Content Creation}
 
 \begin{itemize}
-    \item AI tools are used to generate thumbnails, video titles, and descriptions~\cite{ref10}.
-    \item YouTube and other platforms employ AI to assist creators with trend-based suggestions~\cite{ref11}.
+    \item AI tools are used to generate thumbnails, video titles, and descriptions~\cite{ref13}.
+    \item YouTube and other platforms employ AI to assist creators with trend-based suggestions~\cite{ref14}.
     \item AI improves accessibility for creators with fewer technical skills, which is vital in developing regions like Nepal.
 \end{itemize}
 
@@ -575,7 +622,7 @@ The evolution of video streaming platforms has been profoundly shaped by advance
 \section{Streaming and Content Platforms in Nepal}
 
 \begin{itemize}
-    \item Most Nepali streaming services (e.g., NET TV, NepalFlix) lack ML-based recommendations~\cite{ref19}~\cite{ref18}.
+    \item Most Nepali streaming services (e.g., NET TV, NepalFlix) lack ML-based recommendations~\cite{ref15}~\cite{ref16}.
     \item Over-reliance on mobile apps leads to exclusion of desktop/laptop users.
     \item Limited monetization tools for Nepali creators restrict local content growth.
     \item There is a strong demand for culturally relevant, personalized content in the Nepali language.
@@ -585,7 +632,7 @@ The evolution of video streaming platforms has been profoundly shaped by advance
 
 \section{System Description}
 
-Neptube is a web-based video streaming application designed to provide an engaging platform for both content creators and viewers. Users can upload videos, create playlists, and manage their channels, while viewers can watch videos, comment, like or dislike, and subscribe to channels they enjoy. The platform integrates machine learning techniques, such as collaborative and content-based filtering, to deliver personalized video recommendations based on individual user preferences and viewing history.
+\lettrine[lines=3, lraise=0.1, nindent=0.5em]{\textcolor{necblue}{N}}{eptube is a web-based video streaming application} designed to provide an engaging platform for both content creators and viewers. Users can upload videos, create playlists, and manage their channels, while viewers can watch videos, comment, like or dislike, and subscribe to channels they enjoy. The platform integrates machine learning techniques, such as collaborative and content-based filtering, to deliver personalized video recommendations based on individual user preferences and viewing history.
 
 Additionally, Neptube includes AI-powered tools that assist content creators by automatically generating video thumbnails, titles, and descriptions, helping improve content visibility and user engagement. The system is built with scalability and performance in mind, ensuring it can support a growing user base and content library. Focused on promoting Nepali and regional content, Neptube aims to offer a tailored and user-friendly experience for its audience.
 
@@ -711,6 +758,8 @@ The creator's sequence diagram illustrates the interactions between a content cr
 
 \section{Tasks Completed}
 
+\lettrine[lines=3, lraise=0.1, nindent=0.5em]{\textcolor{necblue}{T}}{he following tasks have been successfully completed} during the initial phase of development:
+
 \begin{itemize}
     \item User sign-in, sign-up, and secure protected routes were added.
     \item Database was set up using Neon PostgreSQL and Drizzle ORM.
@@ -766,44 +815,40 @@ For implementation of our project, we have done with some special tests such as 
 
 \begin{table}[H]
     \centering
-    \caption{Project Development Timeline (Gantt Chart) -- Full Year}
+    \caption{Project Development Timeline (Gantt Chart)}
     \label{tab:gantt_chart}
-    \renewcommand{\arraystretch}{1.2}
+    \renewcommand{\arraystretch}{1.3}
     \rowcolors{2}{white}{lightgray}
-    \scriptsize
-    \begin{tabular}{|p{0.15\textwidth}|>{\centering\arraybackslash}p{0.04\textwidth}|>{\centering\arraybackslash}p{0.04\textwidth}|>{\centering\arraybackslash}p{0.04\textwidth}|>{\centering\arraybackslash}p{0.04\textwidth}|>{\centering\arraybackslash}p{0.04\textwidth}|>{\centering\arraybackslash}p{0.04\textwidth}|>{\centering\arraybackslash}p{0.04\textwidth}|>{\centering\arraybackslash}p{0.04\textwidth}|>{\centering\arraybackslash}p{0.04\textwidth}|>{\centering\arraybackslash}p{0.04\textwidth}|>{\centering\arraybackslash}p{0.04\textwidth}|>{\centering\arraybackslash}p{0.04\textwidth}|}
+    \small
+    \begin{tabular}{|p{0.25\textwidth}|>{\centering\arraybackslash}p{0.045\textwidth}|>{\centering\arraybackslash}p{0.045\textwidth}|>{\centering\arraybackslash}p{0.045\textwidth}|>{\centering\arraybackslash}p{0.045\textwidth}|>{\centering\arraybackslash}p{0.045\textwidth}|>{\centering\arraybackslash}p{0.045\textwidth}|>{\centering\arraybackslash}p{0.045\textwidth}|>{\centering\arraybackslash}p{0.045\textwidth}|>{\centering\arraybackslash}p{0.045\textwidth}|>{\centering\arraybackslash}p{0.045\textwidth}|}
         \hline
         \rowcolor{tableheader}
-        \textbf{Works} & \textbf{M1} & \textbf{M2} & \textbf{M3} & \textbf{M4} & \textbf{M5} & \textbf{M6} & \textbf{M7} & \textbf{M8} & \textbf{M9} & \textbf{M10} & \textbf{M11} & \textbf{M12} \\
+        \textbf{Project Phase} & \textbf{W1} & \textbf{W2} & \textbf{W3} & \textbf{W4} & \textbf{W5} & \textbf{W6} & \textbf{W7} & \textbf{W8} & \textbf{W9} & \textbf{W10} \\
         \hline
-        Pre Analysis & \cellcolor{green!50}$\bullet$ & & & & & & & & & & & \\
+        Pre Analysis Phase & \cellcolor{green!50}\checkmark & & & & & & & & & \\
         \hline
-        Project Proposal & & \cellcolor{green!50}$\bullet$ & & & & & & & & & & \\
+        Project Proposal & & \cellcolor{green!50}\checkmark & & & & & & & & \\
         \hline
-        Detailed Study & & & \cellcolor{green!50}$\bullet$ & & & & & & & & & \\
+        Detailed Study \& Analysis & & & \cellcolor{green!50}\checkmark & & & & & & & \\
         \hline
-        Initial Prototype & & & & \cellcolor{green!50}$\bullet$ & \cellcolor{green!50}$\bullet$ & & & & & & & \\
+        Initial Prototype & & & & \cellcolor{green!50}\checkmark & \cellcolor{green!50}\checkmark & & & & & \\
         \hline
-        Implementation 1 & & & & & & \cellcolor{green!50}$\bullet$ & & & & & & \\
+        Implementation Phase I & & & & & & \cellcolor{green!50}\checkmark & \cellcolor{green!50}\checkmark & & & \\
         \hline
-        Implementation 2 & & & & & & & \cellcolor{necblue!40}$\bullet$ & \cellcolor{necblue!40}$\bullet$ & & & & \\
+        Implementation Phase II & & & & & & & & \cellcolor{necblue!30}$\circ$ & \cellcolor{necblue!30}$\circ$ & \\
         \hline
-        ML Integration & & & & & & & & & \cellcolor{necblue!40}$\bullet$ & \cellcolor{necblue!40}$\bullet$ & & \\
-        \hline
-        Testing \& QA & & & & & & & & & & & \cellcolor{necblue!40}$\bullet$ & \\
-        \hline
-        Documentation & & & & & & & & & & & & \cellcolor{necblue!40}$\bullet$ \\
+        Testing \& Documentation & & & & & & & & & & \cellcolor{necblue!30}$\circ$ \\
         \hline
     \end{tabular}
     
-    \vspace{0.3cm}
+    \vspace{0.5cm}
     \small
-    \textbf{Legend:} \colorbox{green!50}{Completed} \quad \colorbox{necblue!40}{Planned/In Progress}
+    \textbf{Legend:} \colorbox{green!50}{\checkmark~Completed} \quad \colorbox{necblue!30}{$\circ$~Planned}
 \end{table}
 
 \chapter{Conclusion}
 
-The Neptube project aims to create a user-centric web-based video streaming platform that combines modern web technologies with machine learning and artificial intelligence to enhance the overall user experience. By enabling both content creation and consumption, the platform fosters an interactive community where users can engage through comments, likes, and subscriptions. The integration of personalized recommendations ensures that viewers receive content tailored to their preferences, improving content discovery and user satisfaction.
+\lettrine[lines=3, lraise=0.1, nindent=0.5em]{\textcolor{necblue}{T}}{he Neptube project aims to create} a user-centric web-based video streaming platform that combines modern web technologies with machine learning and artificial intelligence to enhance the overall user experience. By enabling both content creation and consumption, the platform fosters an interactive community where users can engage through comments, likes, and subscriptions. The integration of personalized recommendations ensures that viewers receive content tailored to their preferences, improving content discovery and user satisfaction.
 
 Moreover, Neptube's focus on promoting Nepali and regional content addresses the need for localized digital entertainment, providing a platform that supports and encourages local creators. With scalable architecture and AI-powered tools, the system is designed to be efficient, adaptable, and easy to use.
 
@@ -833,56 +878,215 @@ GoogleCloudPlatform, ``Generative-AI: Sample Code and Notebooks for Generative A
 Twitter, ``The-Algorithm-ML: Source Code for Twitter's Recommendation Algorithm.'' [Online]. Available: \url{https://github.com/twitter/the-algorithm-ml}
 
 \bibitem{ref6}
-J. M. Ph.D. and E. Kavlakoglu, ``What Is Content-Based Filtering?,'' \textit{IBM}, 2025. [Online]. Available: \url{https://www.ibm.com/think/topics/content-based-filtering}
+Ingrade, ``How YouTube Recommendation Works: A Deep Dive into AI, Deep Learning, and Collaborative Filtering,'' 2025. [Online]. Available: \url{https://ingrade.io/how-youtube-recommendation-works-a-deep-dive-into-ai-deep-learning-and-collaborative-filtering/}
 
 \bibitem{ref7}
-A. Pujari and R. Patel, ``Exploring the MERN Stack: An In-Depth Analysis of Full-Stack JavaScript Development for Scalable and Efficient Web Applications,'' \textit{JETIR}, vol. 10, no. 5, pp. 1--7, May 2023. [Online]. Available: \url{https://www.jetir.org/papers/JETIRTHE2177.pdf}
+The PostgreSQL Global Development Group, ``PostgreSQL Documentation,'' 2025. [Online]. Available: \url{https://www.postgresql.org/docs/current/}
 
 \bibitem{ref8}
-The PostgreSQL Global Development Group, ``PostgreSQL Documentation,'' 2025. [Online]. Available: \url{https://www.postgresql.org/docs/current/}
+B. Joshi \textit{et al.}, ``Sentiment Analysis in Nepali using LLMs,'' \textit{ACM TALIP}, vol. 23, no. 2, 2025. [Online]. Available: \url{https://dl.acm.org/doi/fullHtml/10.1145/3647782.3647804}
 
 \bibitem{ref9}
 FlowPlayer, ``Adaptive Bitrate Streaming (ABR): The Ultimate Guide to ABR Video,'' 2023. [Online]. Available: \url{https://flowplayer.com/blog/adaptive-bitrate-streaming}
 
 \bibitem{ref10}
-AlmaBetter, ``How Netflix Uses ML \& AI For Better Recommendation for Users,'' 2023. [Online]. Available: \url{https://www.almabetter.com/bytes/articles/how-netflix-uses-machinelearning-to-keep-users-glued-to-the-screen}
-
-\bibitem{ref11}
-P. Song, ``How Does Netflix Use Machine Learning for Recommendations?,'' \textit{ML Journey}, 2025. [Online]. Available: \url{https://mljourney.com/how-does-netflix-use-machine-learning-for-recommendations/}
-
-\bibitem{ref12}
-Ingrade, ``How YouTube Recommendation Works: A Deep Dive into AI, Deep Learning, and Collaborative Filtering,'' 2025. [Online]. Available: \url{https://ingrade.io/how-youtube-recommendation-works-a-deep-dive-into-ai-deep-learning-and-collaborative-filtering/}
-
-\bibitem{ref13}
-I. Chowdhury, ``Impact of Artificial Intelligence on Content Creation,'' \textit{IJRPR}, vol. 5, no. 7, 2024. [Online]. Available: \url{https://ijrpr.com/uploads/V5ISSUE7/IJRPR31275.pdf}
-
-\bibitem{ref14}
-D. Dugan \textit{et al.}, ``Generative AI in YouTube Content Creation,'' \textit{arXiv}, 2025. [Online]. Available: \url{https://arxiv.org/html/2503.03134v1}
-
-\bibitem{ref15}
-Vercel, \textit{Next.js Documentation: Server-Side Rendering and Data Fetching}, 2024. [Online]. Available: \url{https://nextjs.org/docs/pages/building-your-application/data-fetching/get-server-side-props}
-
-\bibitem{ref16}
-B. Joshi \textit{et al.}, ``Sentiment Analysis in Nepali using LLMs,'' \textit{ACM TALIP}, vol. 23, no. 2, 2025. [Online]. Available: \url{https://dl.acm.org/doi/fullHtml/10.1145/3647782.3647804}
-
-\bibitem{ref17}
 S. Kharel, ``Social Media Impact on Nepalese Teenagers,'' \textit{Theseus.fi}, 2024. [Online]. Available: \url{https://www.theseus.fi/bitstream/10024/815842/2/Kharel_Shreya.pdf}
 
-\bibitem{ref18}
-Google Research, ``Deep Neural Networks for YouTube Recommendations.'' [Online]. Available: \url{https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45530.pdf}
+\bibitem{ref11}
+J. M. Ph.D. and E. Kavlakoglu, ``What Is Content-Based Filtering?,'' \textit{IBM}, 2025. [Online]. Available: \url{https://www.ibm.com/think/topics/content-based-filtering}
 
-\bibitem{ref19}
+\bibitem{ref12}
+F. Ricci, L. Rokach, and B. Shapira, \textit{Recommender Systems Handbook}, 2nd ed. New York, NY, USA: Springer, 2015.
+
+\bibitem{ref13}
+AlmaBetter, ``How Netflix Uses ML \& AI For Better Recommendation for Users,'' 2023. [Online]. Available: \url{https://www.almabetter.com/bytes/articles/how-netflix-uses-machinelearning-to-keep-users-glued-to-the-screen}
+
+\bibitem{ref14}
+P. Song, ``How Does Netflix Use Machine Learning for Recommendations?,'' \textit{ML Journey}, 2025. [Online]. Available: \url{https://mljourney.com/how-does-netflix-use-machine-learning-for-recommendations/}
+
+\bibitem{ref15}
 M. AI, ``YouTube's Machine Learning (ML) Algorithm,'' \textit{DEV Community}, 2022. [Online]. Available: \url{https://dev.to/mage_ai/youtubes-machine-learning-ml-algorithm-ej0}
 
-\bibitem{ref20}
+\bibitem{ref16}
+Google Research, ``Deep Neural Networks for YouTube Recommendations.'' [Online]. Available: \url{https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45530.pdf}
+
+\bibitem{ref17}
 Elinext, ``AI-Driven Personalization: YouTube, Netflix \& Amazon,'' 2025. [Online]. Available: \url{https://www.elinext.com/solutions/ai/trends/ai-driven-personalized-contentrecommendation/}
+
+\bibitem{ref18}
+I. Chowdhury, ``Impact of Artificial Intelligence on Content Creation,'' \textit{IJRPR}, vol. 5, no. 7, 2024. [Online]. Available: \url{https://ijrpr.com/uploads/V5ISSUE7/IJRPR31275.pdf}
+
+\bibitem{ref19}
+A. Pujari and R. Patel, ``Exploring the MERN Stack: An In-Depth Analysis of Full-Stack JavaScript Development for Scalable and Efficient Web Applications,'' \textit{JETIR}, vol. 10, no. 5, pp. 1--7, May 2023. [Online]. Available: \url{https://www.jetir.org/papers/JETIRTHE2177.pdf}
+
+\bibitem{ref20}
+Vercel, \textit{Next.js Documentation: Server-Side Rendering and Data Fetching}, 2024. [Online]. Available: \url{https://nextjs.org/docs/pages/building-your-application/data-fetching/get-server-side-props}
 
 \bibitem{ref21}
 M. G. Choi, H. J. Jo, and D. H. Kim, ``A Real-Time Blind Quality-of-Experience Assessment Metric for HTTP Adaptive Streaming,'' in \textit{Proc. 2023 IEEE 14th Int. Conf. Mobility, Sensing and Networking (MSN)}, 2023, pp. 58--65.
 
-\bibitem{ref1a}
-F. Ricci, L. Rokach, and B. Shapira, \textit{Recommender Systems Handbook}, 2nd ed. New York, NY, USA: Springer, 2015.
-
 \end{thebibliography}
+
+% =================================
+% APPENDIX
+% =================================
+\appendix
+\addcontentsline{toc}{chapter}{Appendices}
+
+\chapter{Technology Stack}
+
+\lettrine[lines=3, lraise=0.1, nindent=0.5em]{\textcolor{necblue}{T}}{his appendix provides} a comprehensive overview of the technologies, frameworks, and tools used in the development of the Neptube platform.
+
+\section{Frontend Technologies}
+
+\begin{table}[H]
+    \centering
+    \caption{Frontend Technology Stack}
+    \label{tab:frontend_stack}
+    \renewcommand{\arraystretch}{1.3}
+    \rowcolors{2}{white}{lightgray}
+    \begin{tabular}{|p{0.25\textwidth}|p{0.65\textwidth}|}
+        \hline
+        \rowcolor{tableheader}
+        \textbf{Technology} & \textbf{Purpose} \\
+        \hline
+        Next.js 14 & React framework with server-side rendering and App Router \\
+        \hline
+        React 18 & Component-based UI library for building interactive interfaces \\
+        \hline
+        TypeScript & Type-safe JavaScript for improved code quality and maintainability \\
+        \hline
+        Tailwind CSS & Utility-first CSS framework for rapid UI development \\
+        \hline
+        shadcn/ui & High-quality, accessible UI components built on Radix UI \\
+        \hline
+        React Query & Server state management and data fetching library \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\section{Backend Technologies}
+
+\begin{table}[H]
+    \centering
+    \caption{Backend Technology Stack}
+    \label{tab:backend_stack}
+    \renewcommand{\arraystretch}{1.3}
+    \rowcolors{2}{white}{lightgray}
+    \begin{tabular}{|p{0.25\textwidth}|p{0.65\textwidth}|}
+        \hline
+        \rowcolor{tableheader}
+        \textbf{Technology} & \textbf{Purpose} \\
+        \hline
+        Node.js & JavaScript runtime for server-side execution \\
+        \hline
+        tRPC & End-to-end typesafe API layer for seamless client-server communication \\
+        \hline
+        Drizzle ORM & TypeScript ORM for database operations with type safety \\
+        \hline
+        PostgreSQL & Robust relational database for data persistence \\
+        \hline
+        Neon & Serverless PostgreSQL hosting with auto-scaling capabilities \\
+        \hline
+        Clerk & Authentication and user management service \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\section{AI/ML Technologies}
+
+\begin{table}[H]
+    \centering
+    \caption{AI/ML Technology Stack}
+    \label{tab:aiml_stack}
+    \renewcommand{\arraystretch}{1.3}
+    \rowcolors{2}{white}{lightgray}
+    \begin{tabular}{|p{0.25\textwidth}|p{0.65\textwidth}|}
+        \hline
+        \rowcolor{tableheader}
+        \textbf{Technology} & \textbf{Purpose} \\
+        \hline
+        OpenAI API & GPT-4 for generating video titles, descriptions, and thumbnails \\
+        \hline
+        TensorFlow.js & Client-side machine learning for real-time recommendations \\
+        \hline
+        Python (Flask) & Microservice for ML model inference and training \\
+        \hline
+        Scikit-learn & Collaborative filtering and content-based recommendation algorithms \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\section{DevOps \& Infrastructure}
+
+\begin{table}[H]
+    \centering
+    \caption{DevOps and Infrastructure Stack}
+    \label{tab:devops_stack}
+    \renewcommand{\arraystretch}{1.3}
+    \rowcolors{2}{white}{lightgray}
+    \begin{tabular}{|p{0.25\textwidth}|p{0.65\textwidth}|}
+        \hline
+        \rowcolor{tableheader}
+        \textbf{Technology} & \textbf{Purpose} \\
+        \hline
+        Vercel & Deployment platform for Next.js with edge functions \\
+        \hline
+        GitHub & Version control and collaborative development \\
+        \hline
+        GitHub Actions & CI/CD pipeline for automated testing and deployment \\
+        \hline
+        Cloudflare & CDN for video content delivery and caching \\
+        \hline
+        Mux & Video encoding, storage, and adaptive bitrate streaming \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\chapter{Database Schema}
+
+\lettrine[lines=3, lraise=0.1, nindent=0.5em]{\textcolor{necblue}{T}}{he Neptube database} is designed using PostgreSQL with Drizzle ORM for type-safe database operations. The schema follows normalized database design principles to ensure data integrity and efficient querying.
+
+\section{Core Tables}
+
+\begin{table}[H]
+    \centering
+    \caption{Database Tables Overview}
+    \label{tab:db_tables}
+    \renewcommand{\arraystretch}{1.3}
+    \rowcolors{2}{white}{lightgray}
+    \begin{tabular}{|p{0.2\textwidth}|p{0.7\textwidth}|}
+        \hline
+        \rowcolor{tableheader}
+        \textbf{Table Name} & \textbf{Description} \\
+        \hline
+        users & Stores user profile information, roles, and authentication data \\
+        \hline
+        videos & Contains video metadata, URLs, thumbnails, and publishing status \\
+        \hline
+        comments & User comments on videos with parent-child relationships for replies \\
+        \hline
+        likes & Tracks user likes/dislikes on videos and comments \\
+        \hline
+        subscriptions & Manages channel subscriptions between users \\
+        \hline
+        playlists & User-created playlists with video collections \\
+        \hline
+        watch\_history & Tracks user viewing history for recommendations \\
+        \hline
+        notifications & System and user notifications for engagement \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\section{Key Relationships}
+
+\begin{itemize}
+    \item \textbf{One-to-Many:} Users $\rightarrow$ Videos (one user can upload many videos)
+    \item \textbf{One-to-Many:} Videos $\rightarrow$ Comments (one video can have many comments)
+    \item \textbf{Many-to-Many:} Users $\leftrightarrow$ Videos (through likes and watch history)
+    \item \textbf{Many-to-Many:} Users $\leftrightarrow$ Users (through subscriptions)
+    \item \textbf{Many-to-Many:} Playlists $\leftrightarrow$ Videos (playlist video associations)
+\end{itemize}
 
 \end{document}

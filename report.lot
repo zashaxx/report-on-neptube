@@ -3,5 +3,12 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {4.1}{\ignorespaces Test Cases for Core Functionalities}}{24}{table.caption.48}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Project Development Timeline (Gantt Chart) -- Full Year}}{25}{table.caption.50}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Project Development Timeline (Gantt Chart)}}{25}{table.caption.50}%
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {A.1}{\ignorespaces Frontend Technology Stack}}{30}{table.caption.55}%
+\contentsline {table}{\numberline {A.2}{\ignorespaces Backend Technology Stack}}{31}{table.caption.57}%
+\contentsline {table}{\numberline {A.3}{\ignorespaces AI/ML Technology Stack}}{31}{table.caption.59}%
+\contentsline {table}{\numberline {A.4}{\ignorespaces DevOps and Infrastructure Stack}}{32}{table.caption.61}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {B.1}{\ignorespaces Database Tables Overview}}{33}{table.caption.64}%
