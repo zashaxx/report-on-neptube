@@ -1,9 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.25)  10 DEC 2025 10:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.25)  11 DEC 2025 15:19
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**./report.tex
-(report.tex
+**c:/Users/hisen/OneDrive/Documents/Default/report-on-neptube/report.tex
+(c:/Users/hisen/OneDrive/Documents/Default/report-on-neptube/report.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
 (C:\Program Files\MiKTeX\tex/latex/base\report.cls
@@ -23,19 +24,15 @@ File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 \bibindent=\dimen148
-)
-(C:\Program Files\MiKTeX\tex/latex/base\fontenc.sty
+) (C:\Program Files\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
-)
-(C:\Program Files\MiKTeX\tex/latex/base\inputenc.sty
+) (C:\Program Files\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
-)
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/psnfss\times.sty
+) (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/psnfss\times.sty
 Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
-)
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/psnfss\mathptmx.sty
+) (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/psnfss\mathptmx.sty
 Package: mathptmx 2020/03/25 PSNFSS-v9.3 Times w/ Math, improved (SPQR, WaS) 
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -70,15 +67,12 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
 LaTeX Info: Redefining \hbar on input line 50.
-)
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/microtype\microtype.sty
+) (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/microtype\microtype.sty
 Package: microtype 2025/07/09 v3.2b Micro-typographical refinements (RS)
-
-(C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty
+ (C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks19
-)
-(C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+) (C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count284
 )
@@ -94,10 +88,8 @@ LaTeX Info: Redefining \textls on input line 1449.
 LaTeX Info: Redefining \microtypecontext on input line 2053.
 LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
 \MT@listname@count=\count286
-
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/microtype\microtype-pdftex.def
+ (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/microtype\microtype-pdftex.def
 File: microtype-pdftex.def 2025/07/09 v3.2b Definitions specific to pdftex (RS)
-
 LaTeX Info: Redefining \lsstyle on input line 944.
 LaTeX Info: Redefining \lslig on input line 944.
 \MT@outer@space=\skip51
@@ -107,14 +99,11 @@ Package microtype Info: Loading configuration file microtype.cfg.
 File: microtype.cfg 2025/07/09 v3.2b microtype main configuration file (RS)
 )
 LaTeX Info: Redefining \microtypesetup on input line 3065.
-)
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.sty
+) (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
-
-(C:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty
+ (C:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
-
-(C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty
+ (C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
 \Gm@cnth=\count287
@@ -129,12 +118,9 @@ Package: iftex 2024/12/12 v1.0g TeX engine tests
 \Gm@layouthoffset=\dimen156
 \Gm@layoutvoffset=\dimen157
 \Gm@dimlist=\toks22
-
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.cfg))
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/setspace\setspace.sty
+ (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/setspace\setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
-)
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/enumitem\enumitem.sty
+) (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
 \labelindent=\skip52
 \enit@outerparindent=\dimen158
@@ -142,19 +128,15 @@ Package: enumitem 2025/02/06 v3.11 Customized lists
 \enit@inbox=\box54
 \enit@count@id=\count290
 \enitdp@description=\count291
-)
-(C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
+) (C:\Program Files\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
-
-(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg
+ (C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
-
-(C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def
+ (C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
-)
-(C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+) (C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -164,11 +146,9 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-)
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/colortbl\colortbl.sty
+) (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/colortbl\colortbl.sty
 Package: colortbl 2024/10/29 v1.0k Color table columns (DPC)
-
-(C:\Program Files\MiKTeX\tex/latex/tools\array.sty
+ (C:\Program Files\MiKTeX\tex/latex/tools\array.sty
 Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \col@sep=\dimen159
 \ar@mcellbox=\box55
@@ -181,13 +161,10 @@ Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \everycr=\toks25
 \minrowclearance=\skip55
 \rownum=\count292
-)
-(C:\Program Files\MiKTeX\tex/latex/graphics\dvipsnam.def
+) (C:\Program Files\MiKTeX\tex/latex/graphics\dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
-)
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+) (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
-
 \f@nch@headwidth=\skip56
 \f@nch@offset@elh=\skip57
 \f@nch@offset@erh=\skip58
@@ -203,8 +180,7 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthC=\skip68
 \f@nch@widthR=\skip69
 \@temptokenb=\toks26
-)
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/titlesec\titlesec.sty
+) (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box57
 \beforetitleunit=\skip70
@@ -215,36 +191,29 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \titlewidth=\dimen163
 \titlewidthlast=\dimen164
 \titlewidthfirst=\dimen165
-)
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/placeins\placeins.sty
+) (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/placeins\placeins.sty
 Package: placeins 2005/04/18  v 2.2
-)
-(C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
+) (C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
-
-(C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty
+ (C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
-
-(C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty
+ (C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-)
-(C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+) (C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
 )
 \Gin@req@height=\dimen166
 \Gin@req@width=\dimen167
-)
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/float\float.sty
+) (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count293
 \float@exts=\toks28
 \float@box=\box58
 \@float@everytoks=\toks29
 \@floatcapt=\box59
-)
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/booktabs\booktabs.sty
+) (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen168
 \lightrulewidth=\dimen169
@@ -263,25 +232,21 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count296
 \@lastruleclass=\count297
 \@thisrulewidth=\dimen180
-)
-(C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty
+) (C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
 \@mathmargin=\skip72
 
 For additional information on amsmath, use the `?' option.
 (C:\Program Files\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2024/11/17 v2.01 AMS text
-
-(C:\Program Files\MiKTeX\tex/latex/amsmath\amsgen.sty
+ (C:\Program Files\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks30
 \ex@=\dimen181
-))
-(C:\Program Files\MiKTeX\tex/latex/amsmath\amsbsy.sty
+)) (C:\Program Files\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen182
-)
-(C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty
+) (C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count298
@@ -331,18 +296,15 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \mathdisplay@stack=\toks34
 LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
-)
-(C:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty
+) (C:\Program Files\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
-(C:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+ (C:\Program Files\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup6
 \symAMSb=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-(C:\Program Files\MiKTeX\tex/latex/tools\longtable.sty
+)) (C:\Program Files\MiKTeX\tex/latex/tools\longtable.sty
 Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
 \LTleft=\skip75
 \LTright=\skip76
@@ -360,8 +322,7 @@ Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
 \c@LT@tables=\count313
 \c@LT@chunks=\count314
 \LT@p@ftn=\toks35
-)
-(C:\Program Files\MiKTeX\tex/latex/tools\tabularx.sty
+) (C:\Program Files\MiKTeX\tex/latex/tools\tabularx.sty
 Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 \TX@col@width=\dimen191
 \TX@old@table=\dimen192
@@ -370,26 +331,20 @@ Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 \TX@delta=\dimen195
 \TX@cols=\count315
 \TX@ftn=\toks36
-)
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/multirow\multirow.sty
+) (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/multirow\multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@colwidth=\skip79
 \multirow@cntb=\count316
 \multirow@dima=\skip80
 \bigstrutjot=\dimen196
-)
-(C:\Program Files\MiKTeX\tex/latex/url\url.sty
+) (C:\Program Files\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/lettrine\lettrine.sty
+) (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/lettrine\lettrine.sty
 File: lettrine.sty 2025-01-30 v2.80 (Daniel Flipo)
-
-(C:\Program Files\MiKTeX\tex/latex/l3packages/xfp\xfp.sty
-(C:\Program Files\MiKTeX\tex/latex/l3kernel\expl3.sty
+ (C:\Program Files\MiKTeX\tex/latex/l3packages/xfp\xfp.sty (C:\Program Files\MiKTeX\tex/latex/l3kernel\expl3.sty
 Package: expl3 2025-11-06 L3 programming layer (loader) 
-
-(C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+ (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count317
 ))
@@ -428,11 +383,9 @@ Loading lettrine.cfg
 (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/lettrine\lettrine.cfg)
 \Lettrine@tweaks=\toks37
 \Llist@everypar=\toks38
-)
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/caption\caption.sty
+) (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
-
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/caption\caption3.sty
+ (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@tempdima=\dimen274
 \captionmargin=\dimen275
@@ -448,11 +401,9 @@ Package caption Info: Standard document class detected.
 \c@continuedfloat=\count323
 Package caption Info: float package is loaded.
 Package caption Info: longtable package is loaded.
-
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/caption\ltcaption.sty
+ (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/caption\ltcaption.sty
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
-))
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/tocloft\tocloft.sty
+)) (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/tocloft\tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 51.
 \cftparskip=\skip81
@@ -491,68 +442,51 @@ Package tocloft Info: The document has chapter divisions on input line 51.
 \cftbeforetabskip=\skip112
 \cfttabindent=\skip113
 \cfttabnumwidth=\skip114
-)
-(C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty
+) (C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
-
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
+ (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-)
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.st
-y
+) (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 ) (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/generic/pdfescape\pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+ (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-)
-(C:\Program Files\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+) (C:\Program Files\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/generic/infwarerr\infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-))
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/hycolor\hycolor.sty
+)) (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-)
-(C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
+) (C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
-
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/refcount\refcount.sty
+ (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-)
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/generic/gettitlestring\gettitlestrin
-g.sty
+) (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
  (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
 \c@section@level=\count326
 ) (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/generic/stringenc\stringenc.sty
-Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
-)
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
 \@linkdim=\dimen282
 \Hy@linkcounter=\count327
 \Hy@pagecounter=\count328
-
-(C:\Program Files\MiKTeX\tex/latex/hyperref\pd1enc.def
+ (C:\Program Files\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-)
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/generic/intcalc\intcalc.sty
+) (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count329
-
-(C:\Program Files\MiKTeX\tex/latex/hyperref\puenc.def
+ (C:\Program Files\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
@@ -572,13 +506,10 @@ Package hyperref Info: Bookmarks ON on input line 4462.
 \c@Hy@tempcnt=\count330
 LaTeX Info: Redefining \url on input line 4801.
 \XeTeXLinkMargin=\dimen283
-
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/generic/bitset\bitset.sty
+ (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
-
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
-Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
-)
+ (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
 \Fld@menulength=\count331
 \Field@Width=\dimen284
@@ -595,30 +526,23 @@ Package hyperref Info: PDF/A mode OFF on input line 6108.
 \c@Hfootnote=\count334
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
-(C:\Program Files\MiKTeX\tex/latex/hyperref\hpdftex.def
+ (C:\Program Files\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
 \Fld@listcount=\count335
 \c@bookmark@seq@number=\count336
-
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.
-sty
+ (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
-
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/generic/uniquecounter\uniquecounter.
-sty
+ (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-84.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
 )
 \Hy@SectionHShift=\skip115
 )
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 29
-7.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 297.
  (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/psnfss\t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-)
-(report.aux)
+) (report.aux)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 297.
@@ -656,8 +580,7 @@ Package microtype Info: Patching command `\showhyphens'.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
-
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/microtype\mt-ptm.cfg
+ (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/microtype\mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 *geometry* driver: auto-detecting
@@ -709,18 +632,15 @@ File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 \everyMPtoPDFconversion=\toks40
 ) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring ON on input line 297.
- (report.out)
-(report.out)
+ (report.out) (report.out)
 \@outlinefile=\write3
 \openout3 = `report.out'.
 
@@ -729,38 +649,28 @@ File: images/NEC_Logo.png Graphic file (type png)
 <use images/NEC_Logo.png>
 Package pdftex.def Info: images/NEC_Logo.png  used on input line 317.
 (pdftex.def)             Requested size: 130.08621pt x 124.01129pt.
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 334.
-
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 334.
+ (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `ztmcm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 334.
-
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/psnfss\omlztmcm.fd
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 334.
+ (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/psnfss\omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 334.
-
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/psnfss\omsztmcm.fd
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 334.
+ (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/psnfss\omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 334.
-
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/psnfss\omxztmcm.fd
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 334.
+ (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/psnfss\omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
-34.
-
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/psnfss\ot1ptm.fd
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 334.
+ (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
@@ -769,23 +679,19 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 334.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 334.
-
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/microtype\mt-msa.cfg
+ (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-)
-(C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/microtype\mt-msb.cfg
+) (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) [1
 
-{C:/Users/hisen/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program Fi
-les/MiKTeX/fonts/enc/dvips/base/8r.enc} <./images/NEC_Logo.png>] [1
+{C:/Users/hisen/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc} <./images/NEC_Logo.png>] [1
 
 
 ] [2
 
 
-] (report.toc
-[3
+] (report.toc [3
 
 ] [4])
 \tf@toc=\write4
@@ -805,35 +711,18 @@ les/MiKTeX/fonts/enc/dvips/base/8r.enc} <./images/NEC_Logo.png>] [1
 
 ]
 Chapter 1.
-Package lettrine.sty Info: Targeted height = 42.16287pt
-(lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 46.37962pt (\textcolor {necblue}{I
-}) loversize=0.1;
-(lettrine.sty)             reported on input line 433.
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 4
-48.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 448.
 (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [1
 
 
-] [2]
-[3] [4] [5] [6] [7]
+] [2] [3] [4] [5] [6] [7]
 Chapter 2.
-Package lettrine.sty Info: Targeted height = 42.16287pt
-(lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 46.37962pt (\textcolor {necblue}{T
-}) loversize=0.1;
-(lettrine.sty)             reported on input line 595.
 [8
 
 ] [9]
 Chapter 3.
-Package lettrine.sty Info: Targeted height = 42.16287pt
-(lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 46.37962pt (\textcolor {necblue}{N
-}) loversize=0.1;
-(lettrine.sty)             reported on input line 635.
 [10
 
 ]
@@ -845,8 +734,7 @@ Package pdftex.def Info: images/User_Flowchart.png  used on input line 649.
  [11]
 Overfull \vbox (119.34645pt too high) has occurred while \output is active []
 
-
-[12 <./images/User_Flowchart.png>]
+ [12 <./images/User_Flowchart.png>]
 <images/Creator_Flowchart.png, id=424, 336.50719pt x 575.90157pt>
 File: images/Creator_Flowchart.png Graphic file (type png)
 <use images/Creator_Flowchart.png>
@@ -856,53 +744,39 @@ Package pdftex.def Info: images/Creator_Flowchart.png  used on input line 666.
 <images/User_Use_Case_Diagram.png, id=434, 333.49594pt x 413.29407pt>
 File: images/User_Use_Case_Diagram.png Graphic file (type png)
 <use images/User_Use_Case_Diagram.png>
-Package pdftex.def Info: images/User_Use_Case_Diagram.png  used on input line 6
-83.
+Package pdftex.def Info: images/User_Use_Case_Diagram.png  used on input line 683.
 (pdftex.def)             Requested size: 307.1442pt x 380.66397pt.
-
-[15] [16 <./images/User_Use_Case_Diagram.png>]
+ [15] [16 <./images/User_Use_Case_Diagram.png>]
 <images/Creator_Use_Case_Diagram.png, id=444, 337.26pt x 513.41812pt>
 File: images/Creator_Use_Case_Diagram.png Graphic file (type png)
 <use images/Creator_Use_Case_Diagram.png>
-Package pdftex.def Info: images/Creator_Use_Case_Diagram.png  used on input lin
-e 696.
+Package pdftex.def Info: images/Creator_Use_Case_Diagram.png  used on input line 696.
 (pdftex.def)             Requested size: 307.1442pt x 467.5794pt.
 <images/Admin_Use_Case_Diagram.png, id=445, 335.00156pt x 412.54124pt>
 File: images/Admin_Use_Case_Diagram.png Graphic file (type png)
 <use images/Admin_Use_Case_Diagram.png>
-Package pdftex.def Info: images/Admin_Use_Case_Diagram.png  used on input line 
-707.
+Package pdftex.def Info: images/Admin_Use_Case_Diagram.png  used on input line 707.
 (pdftex.def)             Requested size: 307.1442pt x 378.23322pt.
- [17 <./images/Creator_Use_Case_Diagram.png>] [18 <./images/Admin_Use_Case_Diag
-ram.png>]
+ [17 <./images/Creator_Use_Case_Diagram.png>] [18 <./images/Admin_Use_Case_Diagram.png>]
 <images/User_Sequence_Diagram.png, id=457, 390.70969pt x 438.13687pt>
 File: images/User_Sequence_Diagram.png Graphic file (type png)
 <use images/User_Sequence_Diagram.png>
-Package pdftex.def Info: images/User_Sequence_Diagram.png  used on input line 7
-24.
+Package pdftex.def Info: images/User_Sequence_Diagram.png  used on input line 724.
 (pdftex.def)             Requested size: 361.35138pt x 405.23682pt.
  [19]
 <images/Admin_Sequence_Diagram.png, id=462, 469.755pt x 345.582pt>
 File: images/Admin_Sequence_Diagram.png Graphic file (type png)
 <use images/Admin_Sequence_Diagram.png>
-Package pdftex.def Info: images/Admin_Sequence_Diagram.png  used on input line 
-737.
+Package pdftex.def Info: images/Admin_Sequence_Diagram.png  used on input line 737.
 (pdftex.def)             Requested size: 361.35138pt x 265.8353pt.
  [20 <./images/User_Sequence_Diagram.png>]
 <images/Creator_Sequence_Diagram.png, id=468, 493.0922pt x 459.96844pt>
 File: images/Creator_Sequence_Diagram.png Graphic file (type png)
 <use images/Creator_Sequence_Diagram.png>
-Package pdftex.def Info: images/Creator_Sequence_Diagram.png  used on input lin
-e 750.
+Package pdftex.def Info: images/Creator_Sequence_Diagram.png  used on input line 750.
 (pdftex.def)             Requested size: 361.35138pt x 337.09366pt.
- [21 <./images/Admin_Sequence_Diagram.png>] [22 <./images/Creator_Sequence_Diag
-ram.png>]
+ [21 <./images/Admin_Sequence_Diagram.png>] [22 <./images/Creator_Sequence_Diagram.png>]
 Chapter 4.
-Package lettrine.sty Info: Targeted height = 42.16287pt
-(lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 46.37962pt (\textcolor {necblue}{T
-}) loversize=0.1;
-(lettrine.sty)             reported on input line 761.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 792.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
@@ -1083,16 +957,10 @@ Overfull \hbox (1.28532pt too wide) in paragraph at lines 823--843
 
 [24] [25]
 Chapter 5.
-Package lettrine.sty Info: Targeted height = 42.16287pt
-(lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 46.37962pt (\textcolor {necblue}{T
-}) loversize=0.1;
-(lettrine.sty)             reported on input line 851.
 [26
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 86
-6.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 866.
  (C:\Users\hisen\AppData\Roaming\MiKTeX\tex/latex/psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
@@ -1107,38 +975,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 869--870
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 869--870
-\T1/ptm/m/n/12 (+20) line]. Avail-able: [][]$\T1/pcr/m/n/12 https : / / www . d
-aamideal . com / blogs /
+\T1/ptm/m/n/12 (+20) line]. Avail-able: [][]$\T1/pcr/m/n/12 https : / / www . daamideal . com / blogs /
  []
 
 
 Overfull \hbox (263.23904pt too wide) in paragraph at lines 881--882
-\T1/pcr/m/n/12 how-[]youtube-[]recommendation-[]works-[]a-[]deep-[]dive-[]into-
-[]ai-[]deep-[]learning-[]and-[]collaborative-[]filtering/$[][] 
+\T1/pcr/m/n/12 how-[]youtube-[]recommendation-[]works-[]a-[]deep-[]dive-[]into-[]ai-[]deep-[]learning-[]and-[]collaborative-[]filtering/$[][] 
  []
 
 
 Underfull \hbox (badness 1895) in paragraph at lines 890--891
-[]\T1/ptm/m/n/12 (+20) FlowPlayer, ``Adap-tive Bi-trate Stream-ing (ABR): The U
-l-ti-mate Guide to ABR
+[]\T1/ptm/m/n/12 (+20) FlowPlayer, ``Adap-tive Bi-trate Stream-ing (ABR): The Ul-ti-mate Guide to ABR
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 890--891
-\T1/ptm/m/n/12 (+20) Video,'' 2023. [On-line]. Avail-able: [][]$\T1/pcr/m/n/12 
-https : / / flowplayer . com / blog /
+\T1/ptm/m/n/12 (+20) Video,'' 2023. [On-line]. Avail-able: [][]$\T1/pcr/m/n/12 https : / / flowplayer . com / blog /
  []
 
 
 Underfull \hbox (badness 4254) in paragraph at lines 896--897
-[]\T1/ptm/m/n/12 (+20) J. M. Ph.D. and E. Kavlakoglu, ``What Is Content-Based F
-il-ter-ing?,'' \T1/ptm/m/it/12 (+20) IBM\T1/ptm/m/n/12 (+20) ,
+[]\T1/ptm/m/n/12 (+20) J. M. Ph.D. and E. Kavlakoglu, ``What Is Content-Based Fil-ter-ing?,'' \T1/ptm/m/it/12 (+20) IBM\T1/ptm/m/n/12 (+20) ,
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 896--897
-\T1/ptm/m/n/12 (+20) 2025. [On-line]. Avail-able: [][]$\T1/pcr/m/n/12 https : /
- / www . ibm . com / think / topics /
+\T1/ptm/m/n/12 (+20) 2025. [On-line]. Avail-able: [][]$\T1/pcr/m/n/12 https : / / www . ibm . com / think / topics /
  []
 
 [27
@@ -1146,80 +1008,60 @@ Underfull \hbox (badness 10000) in paragraph at lines 896--897
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 902--903
-\T1/ptm/m/n/12 (+20) [On-line]. Avail-able: [][]$\T1/pcr/m/n/12 https : / / www
- . almabetter . com / bytes / articles /
+\T1/ptm/m/n/12 (+20) [On-line]. Avail-able: [][]$\T1/pcr/m/n/12 https : / / www . almabetter . com / bytes / articles /
  []
 
 
 Overfull \hbox (54.37914pt too wide) in paragraph at lines 902--903
-\T1/pcr/m/n/12 how-[]netflix-[]uses-[]machinelearning-[]to-[]keep-[]users-[]glu
-ed-[]to-[]the-[]screen$[][] 
+\T1/pcr/m/n/12 how-[]netflix-[]uses-[]machinelearning-[]to-[]keep-[]users-[]glued-[]to-[]the-[]screen$[][] 
  []
 
 
 Underfull \hbox (badness 2970) in paragraph at lines 905--906
-[]\T1/ptm/m/n/12 (+20) P. Song, ``How Does Net-flix Use Ma-chine Learn-ing for 
-Rec-om-men-da-tions?,''
+[]\T1/ptm/m/n/12 (+20) P. Song, ``How Does Net-flix Use Ma-chine Learn-ing for Rec-om-men-da-tions?,''
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 905--906
-\T1/ptm/m/it/12 (+20) ML Jour-ney\T1/ptm/m/n/12 (+20) , 2025. [On-line]. Avail-
-able: [][]$\T1/pcr/m/n/12 https : / / mljourney . com /
+\T1/ptm/m/it/12 (+20) ML Jour-ney\T1/ptm/m/n/12 (+20) , 2025. [On-line]. Avail-able: [][]$\T1/pcr/m/n/12 https : / / mljourney . com /
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 908--909
-[]\T1/ptm/m/n/12 (+20) M. AI, ``YouTube's Ma-chine Learn-ing (ML) Al-go-rithm,'
-' \T1/ptm/m/it/12 (+20) DEV Com-
+[]\T1/ptm/m/n/12 (+20) M. AI, ``YouTube's Ma-chine Learn-ing (ML) Al-go-rithm,'' \T1/ptm/m/it/12 (+20) DEV Com-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 908--909
-\T1/ptm/m/it/12 (+20) mu-nity\T1/ptm/m/n/12 (+20) , 2022. [On-line]. Avail-able
-: [][]$\T1/pcr/m/n/12 https : / / dev . to / mage _ ai /
+\T1/ptm/m/it/12 (+20) mu-nity\T1/ptm/m/n/12 (+20) , 2022. [On-line]. Avail-able: [][]$\T1/pcr/m/n/12 https : / / dev . to / mage _ ai /
  []
 
 
 Underfull \hbox (badness 7504) in paragraph at lines 914--915
-[]\T1/ptm/m/n/12 (+20) Elinext, ``AI-Driven Per-son-al-iza-tion: YouTube, Net-f
-lix & Ama-zon,'' 2025.
+[]\T1/ptm/m/n/12 (+20) Elinext, ``AI-Driven Per-son-al-iza-tion: YouTube, Net-flix & Ama-zon,'' 2025.
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 923--924
-[]\T1/ptm/m/n/12 (+20) Vercel, \T1/ptm/m/it/12 (+20) Next.js Doc-u-men-ta-tion:
- Server-Side Ren-der-ing and Data
+[]\T1/ptm/m/n/12 (+20) Vercel, \T1/ptm/m/it/12 (+20) Next.js Doc-u-men-ta-tion: Server-Side Ren-der-ing and Data
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 923--924
-\T1/ptm/m/it/12 (+20) Fetch-ing\T1/ptm/m/n/12 (+20) , 2024. [On-line]. Avail-ab
-le: [][]$\T1/pcr/m/n/12 https : / / nextjs . org /
+\T1/ptm/m/it/12 (+20) Fetch-ing\T1/ptm/m/n/12 (+20) , 2024. [On-line]. Avail-able: [][]$\T1/pcr/m/n/12 https : / / nextjs . org /
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 923--924
 \T1/pcr/m/n/12 docs / pages / building-[]your-[]application / data-[]fetching /
-
  []
 
 [28] [29]
 Appendix A.
-Package lettrine.sty Info: Targeted height = 42.16287pt
-(lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 46.37962pt (\textcolor {necblue}{T
-}) loversize=0.1;
-(lettrine.sty)             reported on input line 938.
 [30
 
 ] [31] [32]
 Appendix B.
-Package lettrine.sty Info: Targeted height = 42.16287pt
-(lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 46.37962pt (\textcolor {necblue}{T
-}) loversize=0.1;
-(lettrine.sty)             reported on input line 1048.
 [33
 
 ] (report.aux)
@@ -1231,21 +1073,17 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 42FF4A610746F2CBA433E9956496ABE2;7742.
  ) 
 Here is how much of TeX's memory you used:
- 17335 strings out of 467871
- 275487 string characters out of 5428442
+ 17287 strings out of 467871
+ 275143 string characters out of 5428442
  752048 words of memory out of 5000000
- 45422 multiletter control sequences out of 15000+600000
- 724672 words of font info for 388 fonts, out of 8000000 for 9000
+ 45416 multiletter control sequences out of 15000+600000
+ 713066 words of font info for 356 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,83p,1345b,615s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Progra
-m Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files
-/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX/fonts/type1
-/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb
-><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report.pdf (41 pages, 647766 bytes).
+ 75i,13n,83p,1403b,615s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on report.pdf (41 pages, 646761 bytes).
 PDF statistics:
  628 PDF objects out of 1000 (max. 8388607)
  128 named destinations out of 1000 (max. 500000)
- 107478 words of extra memory for PDF output out of 128383 (max. 10000000)
+ 97238 words of extra memory for PDF output out of 106986 (max. 10000000)
 
